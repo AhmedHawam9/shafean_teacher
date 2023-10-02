@@ -24,7 +24,7 @@
     <script src="js/dataTables.bootstrap5.min.js"></script>
     <!-- ? Custom JavaScript -->
 
-    <title>المقرأة الالكترونية</title>
+    <title>اضافة تحضير للدرس</title>
   </head>
   <body data-spy="scroll" data-target=".navbar">
     <div class="d-flex sidemobile p-0">
@@ -159,7 +159,7 @@
                 <a href="#" class="nav-link"> لوحة القيادة </a>
               </li>
               <li class="nav-item" role="presentation">
-                <a href="#" class="nav-link active"
+                <a href="#" class="nav-link"
                   >المقرأة</a
                 >
               </li>
@@ -173,58 +173,94 @@
               </li>
              
             </ul>
-            <div class="main-lib-reder">
-              <div class="Educational-librar">
-                <div class="librar">
-                  <div class="text-librar">
-                    <h4>المقرأة الالكترونية</h4>
-                    <div class="p-text">
-                      <p>
-                        <img
-                          class="squr"
-                          src="mida/green squr.png"
-                          alt=""
-                        />الدروس المباشرة هي حصص لايف مع المعلم الخاص بك
-                      </p>
-                      <p>
-                        <img
-                          class="squr"
-                          src="mida/green squr.png"
-                          alt=""
-                        />تواصل مباشر مع المعلم حيث يمكنك سؤاله فى اى وقت
-                      </p>
-                      <p>
-                        <img
-                          class="squr"
-                          src="mida/green squr.png"
-                          alt=""
-                        />دروس معدة خصيصا لك ليستطيع المعلم وولى الامر معرفة
-                        مستوي تقدمك
-                      </p>
-                    </div>
+           <div class="main-preparation">
+           <div class="header-preparation">
+            <h4>اضافة تحضير للدرس</h4>
+           </div>
+           <div class="row">
+            <div class="col-lg-6 col-md-12 col-12">
+                <div class="form-group">
+                    <label class="grenal" for="">محتوي الدرس</label>
+                    <select class="selectpicker">
+                      <option value="" disabled selected hidden>
+                        حدد محتوي الدرس
+                      </option>
+                      <option>0</option>
+                      <option>0</option>
+                      <option>0</option>
+                    </select>
                   </div>
-                </div>
-              </div>
-              <div class="cards-reder">
-                <div class="row">
-                  <div class="col-lg-4 col-md-12 col-12">
-                    <a class="img-reder" href="#">
-                      <img src="mida/leso.png" alt="" />
-                    </a>
+                  <div class="form-group">
+                    <label class="grenal" for="">السورة</label>
+                    <select class="selectpicker">
+                      <option value="" disabled selected hidden>
+                        حدد السورة الخاصة بالدرس
+                      </option>
+                      <option>0</option>
+                      <option>0</option>
+                      <option>0</option>
+                    </select>
                   </div>
-                  <div class="col-lg-4 col-md-12 col-12">
-                    <a class="img-reder" href="#">
-                      <img src="mida/aft les.png" alt="" />
-                    </a>
-                  </div>
-                  <div class="col-lg-4 col-md-12 col-12">
-                    <a class="img-reder" href="#">
-                      <img src="mida/endlesoo.png" alt="" />
-                    </a>
-                  </div>
-                </div>
-              </div>
             </div>
+           
+            
+           </div>
+           <div class="row">
+            <div class="col-lg-3 col-md-12 col-12">
+                <div class="form-group">
+                    <label class="grenal" for="">من</label>
+                  <input type="text" class="form-control" placeholder="البداية">
+                  </div>
+            </div>
+            <div class="col-lg-3 col-md-12 col-12">
+                <div class="form-group">
+                    <label class="grenal" for="">الي</label>
+                  <input type="text" class="form-control" placeholder="النهاية">
+                  </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 col-md-12 col-12">
+                <div class="form-group">
+                    <label for="exampleFormControlTextarea1" class="grenal">اضافة ملاحظات</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="8" placeholder="اضف ملاحظاتك"></textarea>
+                  </div>
+            </div>
+        </div>
+        <input type="checkbox" name="mycheckbox" id="mycheckbox" value="0" />
+        <label class="grenal" for="mycheckbox">اضافة اسئلة</label>
+        <div id="mycheckboxdiv" style="display:none">
+            <h3>السؤال الأول</h3>
+        
+       <div class="row">
+        <div class="col-lg-6 col-md-12 col-12">
+            <div class="form-group">
+                <label class="grenal" for="">نوع السؤال</label>
+                <select class="selectpicker">
+                  <option value="" disabled selected hidden>
+                    اختياري
+                  </option>
+                  <option>0</option>
+                  <option>0</option>
+                  <option>0</option>
+                </select>
+              </div>
+              <button type="button" class="btn add-ask">
+                اضف سؤال جديد
+              </button>
+        </div>
+       </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 col-md-12 col-12">
+                <button type="button" class="btn prepar">
+                    حفظ التحضير
+                  </button>
+            </div>
+        </div>
+           </div>
+         
+          
           </section>
         </div>
         <div class="end-page">
@@ -259,6 +295,11 @@
            </div>
 
         <!-- ======= Chart onload =========== -->
+        <script type="text/javascript">
+            $('#mycheckbox').change(function() {
+                $('#mycheckboxdiv').toggle();
+            });
+            </script>
         <script src="js/main.js"></script>
         <script src="js/counterup.min.js"></script>
         <script src="js/waypoints.min.js"></script>

@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ? Main CSS -->
+    <link rel="stylesheet" href="" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/fontawesome.min.css" />
+    <!-- ? Custom CSS -->
+    <link rel="stylesheet" href="css/dataTables.bootstrap5.min.css" />
+    <link rel="stylesheet" href="css/nasra.css" />
+    <!-- ? Custom CSS -->
+    <!-- ? Main JavaScript -->
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/fontawesome.min.js"></script>
+    <!-- ? Main JavaScript -->
+    <!-- ? Custom JavaScript -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="js/charts.js"></script>
+    <script src="js/jquery.dataTables.min.js"></script>
+    <script src="js/dataTables.bootstrap5.min.js"></script>
+    <!-- ? Custom JavaScript -->
+
+    <title>الانجازات</title>
+  </head>
+  <body data-spy="scroll" data-target=".navbar">
+    <div class="d-flex sidemobile p-0">
+      <!-- ======= Start Sidebar ======= -->
+      <section class="sidebar open">
+        <img src="mida/شفيعا1.png" alt="" />
+        <ul
+          class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start"
+          id="menu"
+        >
+          <li class="nav-item">
+            <a href="let's-go.html" class="nav-link align-middle">
+              <i class="fa-solid fa-house"></i>
+              <span>الرئيسية</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="Educational-library.html" class="nav-link align-middle">
+              <i class="fa-solid fa-book"></i>
+              <span>المكتبة التعليمية</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="Electronic-reader.html" class="nav-link align-middle">
+              <i class="fa-solid fa-video"></i>
+              <span>المقرأة الالكترونية</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="the-exams.html" class="nav-link align-middle">
+              <i class="fa-solid fa-file-contract"></i>
+              <span>الاختبارات</span>
+            </a>
+          </li>
+           <li class="nav-item">
+            <a href="Contests.html" class="nav-link align-middle">
+              <i class="fa-solid fa-tarp-droplet"></i>
+              <span>المسابقات</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="Achievements.html" class="nav-link align-middle">
+              <i class="fa-solid fa-list-check"></i>
+              <span>الانجازات</span>
+            </a>
+          </li>
+         
+          <li class="nav-item">
+            <a href="#" class="nav-link align-middle">
+              <i class="fa-solid fa-circle-exclamation"></i>
+              <span>نبذة عنا</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link align-middle">
+              <i class="fa-solid fa-newspaper"></i>
+              <span>الاخبار</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link align-middle">
+              <i class="fa-regular fa-message"></i>
+              <span>تواصل معنا</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="setiting.html" class="nav-link align-middle">
+                <i class="fa-solid fa-gear"></i>
+              <span>اعدادات الحساب</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link align-middle" data-bs-toggle="modal"
+            data-bs-target="#out">
+              <i class="fa-solid fa-right-from-bracket out"></i>
+              <span>تسجيل الخروج</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <!-- ======= end Sidebar ======= -->
+
+      <!-- ======= Main ======= -->
+      <section class="index_cards">
+        <!-- ======= Start navbar ======= -->
+        <nav class="navbar navbar-expand-lg img-nav bg-white">
+          <div class="container">
+            <div class="menu">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+            <a class="navbar-brand" href="#"><img src="img/title.png" alt="" /></a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <i class="fa-solid fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              
+              <div class="col-lg-6">
+                
+              </div>
+              <div class="col-lg-6 col-md-12 col-12">
+                <div class="left">
+                  <i class="fa-regular fa-bell"></i>
+    
+                  <div class="nav-achivement">
+                    <img src="mida/clup.png" alt="" /> <span>انجازاتي</span>
+                  </div>
+    
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      id="navbarDropdown"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <img src="img/user.png" alt="" /> <span>أحمد أمجد</span>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="seting-acount.html"> اعدادات الحساب </a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><hr class="dropdown-divider" /></li>
+                      <li>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                      </li>
+                    </ul>
+                  </li>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <div class="content-main-home">
+          
+          <div class="homework-ALL">
+            <section class="container">
+              <div class="main-quran">
+                <div class="row">
+                  <div class="col-lg-10 col-md-12 col-12">
+                    <h4> الإنجازات</h4>
+                  </div>
+                  <div class="col-lg-2 col-md-12 col-12">
+                    <button type="button" class="btn homework">
+                        اضافة واجب جديد
+                      </button>
+                  </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-10 col-md-12 col-12">
+                        <form class="form-group">
+                            <i class="fa-solid fa-magnifying-glass teacher"></i>
+                            <input class="form-control teacher" type="search" placeholder="ابحث بإسم الدرس ...." aria-label="Search">
+                        </form>
+                    </div>
+                  
+                  
+                        <div class="col-lg-2 col-md-12 col-12">
+                            <div class="dropdown">
+                              <button
+                                class="btn btn-secondary dropdown-toggle teacher"
+                                type="button"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
+                              >
+                              مجموعة العهد الحديث
+                              </button>
+                              <ul class="dropdown-menu">
+                                <li>
+                                  <a class="dropdown-item" href="#"
+                                    >0</a
+                                  >
+                                </li>
+                              </ul>
+                            </div>
+                            
+                          </div>
+            
+                 
+                </div>
+                <div class="video-quran">
+                  <div class="row">
+                    <div class="col-lg-6 col-md-12 col-12">
+                        <div class="crad-lesson-homeworke">
+                            <div class="img-lesson">
+                              
+                            </div>
+                            <div class="parnt-card-lesson">
+                              <div class="text-card-lesson">
+                                <p>قرآن كريم</p>
+                                <h4>
+                                    واجب علي  الجزء الاول من سورة البقرة بالتجويد و تسميع من الاية 1 حتي 12
+                                </h4>
+                              </div>
+                              <div class="lasts-achievement">
+                                <div class="las">
+                                  <div class="lesson-last-card">
+                                    <img src="mida/small pic.png" alt="" />
+                                    <h3>الشيخ:أحمد عبد الملك</h3>
+                                  </div>
+                                  <div class="lesson-last-1-card">
+                                    <i class="fa-solid fa-table-list"></i>
+                                    <h6>عدد الأسألة: 8</h6>
+                                  </div>
+                                </div>
+                                <div class="botton-lesson">
+                                  <button type="button" class="btn homework">
+                                    تفاصيل الواجب
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-12">
+                        <div class="crad-lesson-homeworke">
+                            <div class="img-lesson">
+                              
+                            </div>
+                            <div class="parnt-card-lesson">
+                              <div class="text-card-lesson">
+                                <p>قرآن كريم</p>
+                                <h4>
+                                    واجب علي  الجزء الاول من سورة البقرة بالتجويد و تسميع من الاية 1 حتي 12
+                                </h4>
+                              </div>
+                              <div class="lasts-achievement">
+                                <div class="las">
+                                  <div class="lesson-last-card">
+                                    <img src="mida/small pic.png" alt="" />
+                                    <h3>الشيخ:أحمد عبد الملك</h3>
+                                  </div>
+                                  <div class="lesson-last-1-card">
+                                    <i class="fa-solid fa-table-list"></i>
+                                    <h6>عدد الأسألة: 8</h6>
+                                  </div>
+                                </div>
+                                <div class="botton-lesson">
+                                  <button type="button" class="btn homework">
+                                    تفاصيل الواجب
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-12">
+                        <div class="crad-lesson-homeworke-1">
+                            <div class="img-lesson">
+                              
+                            </div>
+                            <div class="parnt-card-lesson">
+                              <div class="text-card-lesson">
+                                <p>قرآن كريم</p>
+                                <h4>
+                                    واجب علي  الجزء الاول من سورة البقرة بالتجويد و تسميع من الاية 1 حتي 12
+                                </h4>
+                              </div>
+                              <div class="lasts-achievement">
+                                <div class="las">
+                                  <div class="lesson-last-card">
+                                    <img src="mida/small pic.png" alt="" />
+                                    <h3>الشيخ:أحمد عبد الملك</h3>
+                                  </div>
+                                  <div class="lesson-last-1-card">
+                                    <i class="fa-solid fa-table-list"></i>
+                                    <h6>عدد الأسألة: 8</h6>
+                                  </div>
+                                </div>
+                                <div class="botton-lesson">
+                                  <button type="button" class="btn homework">
+                                    تفاصيل الواجب
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-12">
+                        <div class="crad-lesson-homeworke-1">
+                            <div class="img-lesson">
+                              
+                            </div>
+                            <div class="parnt-card-lesson">
+                              <div class="text-card-lesson">
+                                <p>قرآن كريم</p>
+                                <h4>
+                                    واجب علي  الجزء الاول من سورة البقرة بالتجويد و تسميع من الاية 1 حتي 12
+                                </h4>
+                              </div>
+                              <div class="lasts-achievement">
+                                <div class="las">
+                                  <div class="lesson-last-card">
+                                    <img src="mida/small pic.png" alt="" />
+                                    <h3>الشيخ:أحمد عبد الملك</h3>
+                                  </div>
+                                  <div class="lesson-last-1-card">
+                                    <i class="fa-solid fa-table-list"></i>
+                                    <h6>عدد الأسألة: 8</h6>
+                                  </div>
+                                </div>
+                                <div class="botton-lesson">
+                                  <button type="button" class="btn homework">
+                                    تفاصيل الواجب
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+        <div class="end-page">
+          <div class="container">
+            <div class="made">
+              <p>كل الحقوق محفوظة@شفيعا 2022</p>
+              <p>
+                Made with by <img src="mida/hurt.png" alt="" /><a
+                  href="https://crazyideaco.com/"
+                  >Crazy Idea</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="modal" id="out" tabindex="-1">
+          <div class="modal-dialog out">
+             <div class="modal-content">
+              <div class="modal-header">
+           </div>
+          <div class="modal-body out">
+          <h4>هل تريد تسجيل الخروج؟</h4>
+
+          <button type="submit" class="btn PrimaryButton">تأكيد </button>
+
+          <button type="submit" class="btn PrimaryButton">الغاء</button>
+          </div>
+
+      <div class="modal-footer"></div>
+      </div>
+      </div>
+           </div>
+        <!-- For loop this card child -->
+
+        <!-- ======= Chart onload =========== -->
+        <script src="js/main.js"></script>
+        <script src="js/counterup.min.js"></script>
+        <script src="js/waypoints.min.js"></script>
+      </section>
+    </div>
+  </body>
+</html>

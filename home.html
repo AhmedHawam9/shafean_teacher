@@ -24,7 +24,7 @@
     <script src="js/dataTables.bootstrap5.min.js"></script>
     <!-- ? Custom JavaScript -->
 
-    <title>المقرأة الالكترونية</title>
+    <title>الرئيسية</title>
   </head>
   <body data-spy="scroll" data-target=".navbar">
     <div class="d-flex sidemobile p-0">
@@ -153,79 +153,130 @@
           </div>
         </nav>
         <div class="content-main-lib">
-          <section class="container">
-            <ul class="nav nav-tabs" id="myTab educat" role="tablist">
-              <li class="nav-item" role="presentation">
-                <a href="#" class="nav-link"> لوحة القيادة </a>
-              </li>
-              <li class="nav-item" role="presentation">
-                <a href="#" class="nav-link active"
-                  >المقرأة</a
-                >
-              </li>
-              <li class="nav-item" role="presentation">
-                <a href="Groups.html" class="nav-link"
-                  >المجموعات</a
-                >
-              </li>
-              <li class="nav-item" role="presentation">
-                <a href="#" class="nav-link">الاختبارات</a>
-              </li>
-             
-            </ul>
-            <div class="main-lib-reder">
-              <div class="Educational-librar">
-                <div class="librar">
-                  <div class="text-librar">
-                    <h4>المقرأة الالكترونية</h4>
-                    <div class="p-text">
-                      <p>
-                        <img
-                          class="squr"
-                          src="mida/green squr.png"
-                          alt=""
-                        />الدروس المباشرة هي حصص لايف مع المعلم الخاص بك
-                      </p>
-                      <p>
-                        <img
-                          class="squr"
-                          src="mida/green squr.png"
-                          alt=""
-                        />تواصل مباشر مع المعلم حيث يمكنك سؤاله فى اى وقت
-                      </p>
-                      <p>
-                        <img
-                          class="squr"
-                          src="mida/green squr.png"
-                          alt=""
-                        />دروس معدة خصيصا لك ليستطيع المعلم وولى الامر معرفة
-                        مستوي تقدمك
-                      </p>
+         <div class="container">
+            <div class="row">
+                <div class="col-lg-7 col-md-12 col-12">
+                    <div class="main-home">
+                        <a href="#">
+                            <img src="mida/maq.png" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="mida/grop.png" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="mida/eng.png" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="mida/tes.png" alt="">
+                        </a>
                     </div>
-                  </div>
                 </div>
-              </div>
-              <div class="cards-reder">
-                <div class="row">
-                  <div class="col-lg-4 col-md-12 col-12">
-                    <a class="img-reder" href="#">
-                      <img src="mida/leso.png" alt="" />
-                    </a>
-                  </div>
-                  <div class="col-lg-4 col-md-12 col-12">
-                    <a class="img-reder" href="#">
-                      <img src="mida/aft les.png" alt="" />
-                    </a>
-                  </div>
-                  <div class="col-lg-4 col-md-12 col-12">
-                    <a class="img-reder" href="#">
-                      <img src="mida/endlesoo.png" alt="" />
-                    </a>
-                  </div>
+                <div class="col-lg-5 col-md-12 col-12">
+                    <div class="main-site">
+                        <h3>معدل الاحصائيات على الموقع</h3>
+                        <div class="note-home">
+                            <img src="mida/play.png" alt="" />
+                            <div class="cardachivement">
+                              <h4>اجمالى الدروس</h4>
+                              <p >25 درس</p>
+                            </div>
+                          </div>
+                          <div class="note-home">
+                            
+                            <img src="mida/users.png" alt="" />
+                            <div class="cardachivement">
+                              <h4>اجمالى الطلاب</h4>
+                              <p >200 طالب</p>
+                            </div>
+                          </div>
+                          <div class="note-home">
+                            <img src="mida/user-group.png" alt="" />
+                            <div class="cardachivement">
+                              <h4>المجموعات</h4>
+                              <p>4</p>
+                            </div>
+                          </div>
+                          <div class="note-home">
+                            <img src="mida/star.png" alt="" />
+                            <div class="cardachivement">
+                              <h4>التقييمات</h4>
+                              <p>250 تقييم</p>
+                            </div>
+                          </div>
+                    </div>
                 </div>
-              </div>
             </div>
-          </section>
+            <div class="row">
+            <div class="col-lg-7 col-md-12 col-12">
+                <div class="all-chart-1">
+                    <h4>
+                        معدل تطور الطالب 
+                    </h4>
+                    <canvas id="percentageProjectsDay"></canvas>
+                    <script>
+                      var barChartDataProjectsDay = {
+                        labels: [
+                          "19 Sep",
+                          "26 Sep",
+                          "3 Oct",
+                          "10 Oct",
+                          "17 Oct",
+                        ],
+                        datasets: [
+                          {
+                            type: "line",
+                            label: "معدل تطور الطالب ",
+                            backgroundColor: "rgba(36, 104, 79, .1)",
+                            borderColor: "#24684F",
+                            fill: true,
+                            borderWidth: 1,
+                            tension: 0.1,
+                            data: [10, 7, 5, 6, 9, 7, 8],
+                          },
+                          
+                        ],
+                      };
+
+                      var chartOptionsProjectsDay = {
+                        responsive: true,
+                        legend: {
+                          position: "top",
+                        },
+                        title: {
+                          display: true,
+                          text: "Chart.js Bar Chart",
+                        },
+                      };
+                    </script>
+                  </div>
+            </div>
+            <div class="col-lg-5 col-md-12 col-12">
+                <div class="main-active">
+                    <div class="active-1">
+                        <h4>النشاطات القادمة</h4>
+                        <a href="#"><p>
+                            عرض الكل
+                        </p></a>
+                    </div>
+                    <div class="act">
+                        <h4>حصة لايف على الجزء الأول من سورة البقرة بالتجويد</h4>
+                        <p>مجموعة العهد الحديث</p>
+                        <img src="mida/22.png" alt="">
+                    </div>
+                    <div class="act">
+                        <h4>حصة لايف على الجزء الأول من سورة البقرة بالتجويد</h4>
+                        <p>مجموعة العهد الحديث</p>
+                        <img src="mida/22.png" alt="">
+                    </div>
+                    <div class="act">
+                        <h4>حصة لايف على الجزء الأول من سورة البقرة بالتجويد</h4>
+                        <p>مجموعة العهد الحديث</p>
+                        <img src="mida/22.png" alt="">
+                    </div>
+                </div>
+            </div>
+            </div>
+         </div>
         </div>
         <div class="end-page">
           <div class="container">
@@ -257,8 +308,18 @@
       </div>
       </div>
            </div>
+          
 
         <!-- ======= Chart onload =========== -->
+        <script>
+             var percentageProjectsDay = document
+          .getElementById("percentageProjectsDay")
+          .getContext("2d");
+        window.myBar = new Chart(percentageProjectsDay, {
+          data: barChartDataProjectsDay,
+          options: chartOptionsProjectsDay,
+        });
+        </script>
         <script src="js/main.js"></script>
         <script src="js/counterup.min.js"></script>
         <script src="js/waypoints.min.js"></script>
