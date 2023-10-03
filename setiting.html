@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ? Main CSS -->
+    <link rel="stylesheet" href="" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/fontawesome.min.css" />
+    <!-- ? Custom CSS -->
+    <link rel="stylesheet" href="css/dataTables.bootstrap5.min.css" />
+    <link rel="stylesheet" href="css/nasra.css" />
+    <!-- ? Custom CSS -->
+    <!-- ? Main JavaScript -->
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/fontawesome.min.js"></script>
+    <!-- ? Main JavaScript -->
+    <!-- ? Custom JavaScript -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="js/charts.js"></script>
+    <script src="js/jquery.dataTables.min.js"></script>
+    <script src="js/dataTables.bootstrap5.min.js"></script>
+    <!-- ? Custom JavaScript -->
+
+    <title>اعدادات الحساب</title>
+  </head>
+  <body>
+    <!-- =========== ? NavBar =========== -->
+    <div class="d-flex sidemobile p-0">
+      <section class="sidebar open">
+        <img src="mida/شفيعا1.png" alt="" />
+        <ul
+          class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start"
+          id="menu"
+        >
+          <li class="nav-item">
+            <a href="home.html" class="nav-link align-middle">
+              <i class="fa-solid fa-house"></i>
+              <span>الرئيسية</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="Electronic-reader.html" class="nav-link align-middle">
+              <i class="fa-solid fa-book"></i>
+              <span>المقرأة الالكترونية</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="Groups.html" class="nav-link align-middle">
+              <i class="fa-solid fa-people-group"></i>
+              <span>المجموعات</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="the-exams.html" class="nav-link align-middle">
+              <i class="fa-solid fa-file-contract"></i>
+              <span>الاختبارات</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link align-middle">
+              <i class="fa-solid fa-circle-exclamation"></i>
+              <span>نبذة عنا</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link align-middle">
+              <i class="fa-solid fa-newspaper"></i>
+              <span>الاخبار</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link align-middle">
+              <i class="fa-regular fa-message"></i>
+              <span>تواصل معنا</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="setiting.html" class="nav-link align-middle">
+              <i class="fa-solid fa-gear"></i>
+              <span>اعدادات الحساب</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a
+              href="#"
+              class="nav-link align-middle"
+              data-bs-toggle="modal"
+              data-bs-target="#out"
+            >
+              <i class="fa-solid fa-right-from-bracket out"></i>
+              <span>تسجيل الخروج</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <!-- ======= end Sidebar ======= -->
+
+      <!-- ======= Main ======= -->
+      <section class="index_cards">
+        <!-- ======= Start navbar ======= -->
+        <nav class="navbar navbar-expand-lg img-nav bg-white">
+          <div class="container">
+            <div class="menu">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+            <a class="navbar-brand" href="#"
+              ><img src="img/title.png" alt=""
+            /></a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <i class="fa-solid fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <div class="col-lg-6"></div>
+              <div class="col-lg-6 col-md-12 col-12">
+                <div class="left">
+                  <i class="fa-regular fa-bell"></i>
+
+                  <div class="nav-achivement">
+                    <img src="mida/clup.png" alt="" /> <span>انجازاتي</span>
+                  </div>
+
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      id="navbarDropdown"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <img src="img/user.png" alt="" /> <span>أحمد أمجد</span>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li>
+                        <a class="dropdown-item" href="seting-acount.html">
+                          اعدادات الحساب
+                        </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Another action</a>
+                      </li>
+                      <li><hr class="dropdown-divider" /></li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Something else here</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <!-- =========== ? NavBar =========== -->
+        <div class="parent">
+          <div class="container">
+            <div class="row">
+              <h4 class="h4">الرئيسية / اعدادات الحساب</h4>
+
+              <div class="row">
+                <div class="col-lg-3 col-md-5 col-12">
+                  <div
+                    class="nav flex-column nav-pills shape-tab"
+                    id="v-pills-tab"
+                    role="tablist"
+                    aria-orientation="vertical"
+                  >
+                    <div class="title-bab">
+                      <img src="mida/user-seting.png" alt="" />
+                      <div class="user">
+                        <h5>أمجد عمر الخالدي</h5>
+                        <h6>طالب</h6>
+                      </div>
+                    </div>
+                    <button
+                      class="nav-link active"
+                      id="v-pills-home-tab"
+                      data-bs-toggle="pill"
+                      data-bs-target="#v-pills-home"
+                      type="button"
+                      role="tab"
+                      aria-controls="v-pills-home"
+                      aria-selected="true"
+                    >
+                      <div class="seting">
+                        <i class="fa-regular fa-user"></i>
+                        <h5>اعدادات الحساب</h5>
+                      </div>
+                    </button>
+                
+               
+                    <button
+                      class="nav-link"
+                      id="v-pills-messages-tab"
+                      data-bs-toggle="pill"
+                      data-bs-target="#v-pills-messages"
+                      type="button"
+                      role="tab"
+                      aria-controls="v-pills-messages"
+                      aria-selected="false"
+                    >
+                      <div class="seting">
+                        <i class="fa-regular fa-comments"></i>
+                        <h5>الرسائل</h5>
+                      </div>
+                    </button>
+                    <button
+                      class="nav-link"
+                      id="v-pills-password-tab"
+                      data-bs-toggle="pill"
+                      data-bs-target="#v-pills-password"
+                      type="button"
+                      role="tab"
+                      aria-controls="v-pills-password"
+                      aria-selected="false"
+                    >
+                      <div class="seting">
+                        <i class="fa-solid fa-unlock-keyhole"></i>
+                        <h5>تغيير كلمة المرور</h5>
+                      </div>
+                    </button>
+                    <button
+                      class="nav-link"
+                      id="v-pills-notification-tab"
+                      data-bs-toggle="pill"
+                      data-bs-target="#v-pills-notification"
+                      type="button"
+                      role="tab"
+                      aria-controls="v-pills-notification"
+                      aria-selected="false"
+                    >
+                      <div class="seting">
+                        <i class="fa-regular fa-bell"></i>
+                        <h5>الاشعارات</h5>
+                      </div>
+                    </button>
+                   
+                    <button
+                      class="nav-link"
+                      type="button"
+                      data-bs-toggle="modal"
+                      data-bs-target="#out"
+                    >
+                      <div class="seting">
+                        <i class="fa-solid fa-right-from-bracket out"></i>
+                        <h5>تسجيل الخروج</h5>
+                      </div>
+                    </button>
+                  </div>
+                  <div class="modal" id="out" tabindex="-1">
+                    <div class="modal-dialog out">
+                      <div class="modal-content">
+                        <div class="modal-header"></div>
+                        <div class="modal-body out">
+                          <h4>هل تريد تسجيل الخروج؟</h4>
+
+                          <button type="submit" class="btn PrimaryButton">
+                            تأكيد
+                          </button>
+
+                          <button type="submit" class="btn PrimaryButton">
+                            الغاء
+                          </button>
+                        </div>
+
+                        <div class="modal-footer"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-9 col-md-7 col-12">
+                  <div class="tab-content" id="v-pills-tabContent">
+                    <!-- seting account -->
+                    <div
+                      class="tab-pane fade show active"
+                      id="v-pills-home"
+                      role="tabpanel"
+                      aria-labelledby="v-pills-home-tab"
+                    >
+                      <div class="head-tab">
+                        <h6>اعدادات الحساب</h6>
+                      </div>
+                      <div class="name">
+                        <!-- uplod img -->
+                        <div class="col-lg-3 col-md-5 col-12">
+                          <div class="container">
+                            <div class="avatar-upload">
+                              <div class="avatar-edit">
+                                <div class="col-lg-12 col-md-12 col-12">
+                                  <input
+                                    type="file"
+                                    id="imageUpload"
+                                    accept=".png, .jpg, .jpeg"
+                                  />
+                                  <label for="imageUpload" class="btn">
+                                    اضافة صورة
+                                  </label>
+                                </div>
+                              </div>
+                              <div class="avatar-preview">
+                                <div id="imagePreview" class="img"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!--uplod img  -->
+
+                        <div class="col-lg-7 col-md-10 col-10">
+                          <div class="form-group setiting">
+                            <input
+                              type="text"
+                              class="form-control"
+                              placeholder="الاسم كاملا"
+                            />
+                            <i class="fa-solid fa-user po"></i>
+
+                            <input
+                              type="tel"
+                              class="form-control"
+                              placeholder="رقم الجوال"
+                            />
+                            <i class="fa-solid fa-phone te"></i>
+
+                            <input
+                              type="email"
+                              class="form-control"
+                              placeholder="البريد لاالكتروني ( اختياري )"
+                            />
+                            <i class="fa-solid fa-envelope ma"></i>
+                          </div>
+                          <button type="button" class="btn btn-success">
+                            حفظ
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- sons -->
+                  
+                    <!-- My-achievements -->
+                   
+                    <!-- massage -->
+                    <div
+                      class="tab-pane fade"
+                      id="v-pills-messages"
+                      role="tabpanel"
+                      aria-labelledby="v-pills-messages-tab"
+                    >
+                      <div class="head-tab">
+                        <h6>الرسائل</h6>
+                      </div>
+                      <div class="tab-of-masseges">
+                        <div class="bord">
+                          <div class="all-meaasae">
+                            <h4>كل الرسائل (2)</h4>
+                          </div>
+
+                          <div class="all-teachers">
+                            <div class="img-teacher">
+                              <img src="mida/message1.png" alt="" />
+                            </div>
+                            <div class="parent-teacher">
+                              <div class="name-teacher">
+                                <div class="teacher">
+                                  <h5>الشيخ/ أحمد على</h5>
+                                  <h6>أحمد عبدالملك</h6>
+                                </div>
+                                <div class="time">
+                                  <p>PM4:57</p>
+                                </div>
+                              </div>
+                              <div class="explain-teacher">
+                                <div class="h6">
+                                  <h6>
+                                    من فضلك يا شيخى اريد معني الآية الاولى فى
+                                    سورة البقرة
+                                  </h6>
+                                </div>
+                                <div class="p">
+                                  <p>31</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="all-teachers">
+                            <div class="img-teacher">
+                              <img src="mida/message2.png" alt="" />
+                            </div>
+                            <div class="parent-teacher">
+                              <div class="name-teacher">
+                                <div class="teacher">
+                                  <h5>الشيخ/ أحمد على</h5>
+                                </div>
+                                <div class="time">
+                                  <p>PM4:57</p>
+                                </div>
+                              </div>
+                              <div class="explain-teacher border-0">
+                                <h6>
+                                  لاتنسي موعد حضور الحصة المباشرة اليوم الساعة
+                                  12 ظهرا
+                                </h6>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="chat-of-massege">
+                          <div class="status-of-teacher">
+                            <div class="img">
+                              <img src="mida/message2.png" alt="" />
+                            </div>
+                            <div class="list-name">
+                              <div class="status-name-teacher">
+                                <h4>الشيخ/ أحمد ابراهيم</h4>
+                                <p>نشط الآن</p>
+                              </div>
+                              <div class="list">
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="wats-chat">
+                            <div class="date">
+                              <p>7 يناير</p>
+                            </div>
+                            <div class="quesion">
+                              <h6>السلام عليكم ورحمة الله كيفك ؟</h6>
+                              <p>6:30PM</p>
+                            </div>
+                            <div class="anser-flex">
+                              <div class="anser">
+                                <h6>السلام عليكم ورحمة الله كيفك ؟</h6>
+                                <p>6:30PM</p>
+                              </div>
+                            </div>
+                            <div class="send-massge">
+                              <div class="form-group">
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  placeholder="اكتب رسالتك هنا ..."
+                                />
+                              </div>
+                              <div class="tlegram">
+                                <i class="fa-brands fa-telegram"></i>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- pass -->
+                    <div
+                      class="tab-pane fade"
+                      id="v-pills-password"
+                      role="tabpanel"
+                      aria-labelledby="v-pills-password-tab"
+                    >
+                      <div class="head-tab">
+                        <h6>تغير كلمه المرور</h6>
+                      </div>
+                      <div class="col-lg-7 col-md-10 col-10">
+                        <div class="password">
+                          <div class="form-group">
+                            <input
+                              type="tel"
+                              class="form-control"
+                              placeholder="رقم الجوال"
+                            />
+                            <i class="fa-solid fa-phone"></i>
+
+                            <input
+                              type="password"
+                              class="form-control"
+                              placeholder="كلمة المرور القديمة"
+                            />
+                            <i class="fa-solid fa-lock lo"></i>
+                            <input
+                              type="password"
+                              class="form-control"
+                              placeholder="كلمة المرور الجديدة"
+                            />
+                            <i class="fa-solid fa-lock-open set"></i>
+                          </div>
+                          <button type="button" class="btn btn-success">
+                            حفظ
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- notification -->
+                    <div
+                      class="tab-pane fade"
+                      id="v-pills-notification"
+                      role="tabpanel"
+                      aria-labelledby="v-pills-notification-tab"
+                    >
+                      <div class="head-tab">
+                        <h6>الاشعارات</h6>
+                      </div>
+                      <div class="notification">
+                        <div class="img-notification">
+                          <img src="mida/notification1.png" alt="" />
+                        </div>
+                        <div class="details-notification">
+                          <h5>
+                            اقترب موعد الدرس المباشر مع الشيخ أحمد <br />
+                            عبد المنعم , استعد بالمراجعة
+                            <img src="mida/imog.png" alt="" />
+                          </h5>
+                          <p>منذ 10 دقائق</p>
+                        </div>
+                      </div>
+                      <div class="notification">
+                        <div class="img-notification">
+                          <img src="mida/notification2.png" alt="" />
+                        </div>
+                        <div class="details-notification">
+                          <h5>
+                            فاتك موعد الدرس تواصل مع معلمك واحصل على <br />
+                            موعد جديد
+                            <img src="mida/imog2.png" alt="" />
+                          </h5>
+                          <p>منذ 10 دقائق</p>
+                        </div>
+                      </div>
+                      <div class="notification">
+                        <div class="img-notification">
+                          <img src="mida/notification3.png" alt="" />
+                        </div>
+                        <div class="details-notification">
+                          <h5>
+                            لديك امتحان قريبا تم تحديدة وهو يوم 22 من فبراير ,
+                            قم بمراجعة الجزء الخاص <br />
+                            لتحصل على اعلى الدرجات
+                            <img src="mida/imog3.png" alt="" />
+                          </h5>
+                          <p>منذ 10 دقائق</p>
+                        </div>
+                      </div>
+                    </div>
+                  
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--uplod img   -->
+        <script>
+          function readURL(input) {
+            if (input.files && input.files[0]) {
+              var reader = new FileReader();
+              reader.onload = function (e) {
+                $("#imagePreview").css(
+                  "background-image",
+                  "url(" + e.target.result + ")"
+                );
+                $("#imagePreview").hide();
+                $("#imagePreview").fadeIn(650);
+              };
+              reader.readAsDataURL(input.files[0]);
+            }
+          }
+          $("#imageUpload").change(function () {
+            readURL(this);
+          });
+        </script>
+        <!-- uplod img  -->
+
+        <script src="js/main.js"></script>
+        <!-- counter -->
+        <script src="js/counterup.min.js"></script>
+        <script src="js/waypoints.min.js"></script>
+      </section>
+    </div>
+  </body>
+</html>

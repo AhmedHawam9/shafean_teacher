@@ -24,7 +24,7 @@
     <script src="js/dataTables.bootstrap5.min.js"></script>
     <!-- ? Custom JavaScript -->
 
-    <title>المجموعات</title>
+    <title>اضافة سؤال جديد</title>
   </head>
   <body data-spy="scroll" data-target=".navbar">
     <div class="d-flex sidemobile p-0">
@@ -163,7 +163,7 @@
             </div>
           </div>
         </nav>
-        <div class="content-main-group">
+        <div class="content-main-new">
           <section class="container">
             <ul class="nav nav-tabs" id="myTab educat" role="tablist">
               <li class="nav-item" role="presentation">
@@ -173,72 +173,150 @@
                 <a href="Electronic-reader.html" class="nav-link">المقرأة</a>
               </li>
               <li class="nav-item" role="presentation">
-                <a href="Groups.html" class="nav-link active">المجموعات</a>
+                <a href="Groups.html" class="nav-link">المجموعات</a>
               </li>
               <li class="nav-item" role="presentation">
                 <a href="the-exams.html" class="nav-link">الاختبارات</a>
               </li>
             </ul>
-           <div class="main-group">
-            <div class="text-librar">
-                <h4>المجموعات</h4>
-                <div class="p-text">
-                  <p>
-                    <img
-                      class="squr"
-                      src="mida/green squr.png"
-                      alt=""
-                    />هي المجموعات التي تشارك بها مع طلابك الخاصين بك .
-                  </p>
-                  <p>
-                    <img
-                      class="squr"
-                      src="mida/green squr.png"
-                      alt=""
-                    />في المجموعات تستطيع معرفة مواعيد الدروس المباشرة و القادمة لك بسهولة .
-                  </p>
-                  <p>
-                    <img
-                      class="squr"
-                      src="mida/green squr.png"
-                      alt=""
-                    />يمكنك ايضا معرفة طلاب كلمجموعة بجميع انشطتهم و يمكنك التواصل معهم او مع اولياء امورهم بسهولة .
-                  </p>
+            <div class="main-preparation">
+              <div class="header-preparation">
+                <h4>اضافة سؤال جديد</h4>
+              </div>
+              <div class="row">
+                <div class="col-lg-6 col-md-12 col-12">
+                  <div class="form-group">
+                    <label class="grenal" for="">نوع السؤال</label>
+                    <select class="selectpicker">
+                      <option value="" disabled selected hidden>اختياري</option>
+                      <option>0</option>
+                      <option>0</option>
+                      <option>0</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label class="grenal" for="">نص السؤال</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="ادخل نص السؤال"
+                    />
+                  </div>
                 </div>
               </div>
-            <div class="row">
-                <div class="col-lg-4 col-md-12 col-12">
-                    <a href="#">
-                        <img class="img-group" src="mida/a1.png" alt="">
-                    </a>
+              <div class="row">
+                <div class="col-lg-6 col-md-12 col-12">
+                  <div class="form-group">
+                    <div id="AppendAnswer" class="AppendAnswer">
+                      <label for="" class="mb-2">الاجابات*</label>
+                      <div class="d-flex align-items-center append_answer">
+                        <input
+                          type="text"
+                          name=""
+                          id=""
+                          class="form-control"
+                          placeholder="ادخل الاجابة الاولي"
+                        />
+                        <button type="button" class="remove btn">x</button>
+                        <input
+                          type="radio"
+                          class="form-check-input"
+                          name="radioAnswer"
+                          id=""
+                          checked
+                        />
+                      </div>
+                    </div>
+
+                    <script>
+                      $(function () {
+                        $("#btnAdd").bind("click", function () {
+                          var div = $("<div />");
+                          div.html(GetDynamicNewAnswer(""));
+                          $("#AppendAnswer").append(div);
+                        });
+                        $("body").on("click", ".remove", function () {
+                          $(this).closest("div").remove();
+                        });
+                      });
+                      function GetDynamicNewAnswer(value) {
+                        return (
+                          '<div class="d-flex align-items-center append_answer">' +
+                          '<input type="text" name="" id="" class="form-control" placeholder="">' +
+                          '<button type="button" class="remove btn">x</button>' +
+                          '<input type="radio" class="form-check-input" name="radioAnswer" id="">' +
+                          "</div>"
+                        );
+                      }
+                    </script>
+                  </div>
+                  <div class="form-group">
+                    <div id="AppendAnswer" class="AppendAnswer">
+                      <div class="d-flex align-items-center append_answer">
+                        <input
+                          type="text"
+                          name=""
+                          id=""
+                          class="form-control"
+                          placeholder="ادخل الاجابة "
+                        />
+                        <button type="button" class="remove btn">x</button>
+                        <input
+                          type="radio"
+                          class="form-check-input"
+                          name="radioAnswer"
+                          id=""
+                          checked
+                        />
+                      </div>
+                    </div>
+                    <small class="d-block text-start"
+                      ><button id="btnAdd" class="btn btnAdd" type="button">
+                        + إضافة إجابة جديدة
+                      </button></small
+                    >
+                    <script>
+                      $(function () {
+                        $("#btnAdd").bind("click", function () {
+                          var div = $("<div />");
+                          div.html(GetDynamicNewAnswer(""));
+                          $("#AppendAnswer").append(div);
+                        });
+                        $("body").on("click", ".remove", function () {
+                          $(this).closest("div").remove();
+                        });
+                      });
+                      function GetDynamicNewAnswer(value) {
+                        return (
+                          '<div class="d-flex align-items-center append_answer">' +
+                          '<input type="text" name="" id="" class="form-control" placeholder="">' +
+                          '<button type="button" class="remove btn">x</button>' +
+                          '<input type="radio" class="form-check-input" name="radioAnswer" id="">' +
+                          "</div>"
+                        );
+                      }
+                    </script>
+                  </div>
+                  
                 </div>
-                <div class="col-lg-4 col-md-12 col-12">
-                    <a href="#">
-                        <img class="img-group" src="mida/a2.png" alt="">
-                    </a>
+                
+              </div>
+              <div class="row">
+                <div class="col-lg-8 col-md-12 col-12">
+                    <div class="button-added">
+                        <button type="button" class="btn added">اضف سؤال جديد</button>
+                       
+                     </div>
                 </div>
-                <div class="col-lg-4 col-md-12 col-12">
-                    <a href="#">
-                        <img class="img-group" src="mida/a3.png" alt="">
-                    </a>
+                <div class="col-lg-6 col-md-12 col-12">
+                    <div class="button-added">
+                        <button type="button" class="btn added-add">اضافة</button>
+                       
+                     </div>
                 </div>
-                <div class="col-lg-4 col-md-12 col-12">
-                    <a href="#">
-                        <img class="img-group" src="mida/a4.png" alt="">
-                    </a>
-                </div>
-                <div class="col-lg-4 col-md-12 col-12">
-                    <a href="#">
-                        <img class="img-group" src="mida/a5.png" alt="">
-                    </a>
-                </div>
-                <div class="col-lg-4 col-md-12 col-12">
-                    <a href="#">
-                        <img class="img-group" src="mida/a6.png" alt="">
-                    </a>
-                </div>
+             </div>
+            
             </div>
-           </div>
           </section>
         </div>
         <div class="end-page">
@@ -271,6 +349,43 @@
           </div>
         </div>
 
+        <!-- ======= Chart onload =========== -->
+        <script>
+          $(function () {
+            $("#btnAdd").bind("click", function () {
+              var div = $("<div />");
+              div.html(GetDynamicTextBox(""));
+              $("#TextBoxContainer").append(div);
+            });
+            $("#btnGet").bind("click", function () {
+              var values = "";
+              $("input[name=DynamicTextBox]").each(function () {
+                values += $(this).val() + "\n";
+              });
+              alert(values);
+            });
+            $("body").on("click", ".remove", function () {
+              $(this).closest("div").remove();
+            });
+          });
+          function GetDynamicTextBox(value) {
+            return (
+              '<input type="text" value = "' +
+              value +
+              '" />&nbsp;' +
+              '<input name = "DynamicTextBox" type="text" value = "' +
+              value +
+              '" />&nbsp;' +
+              '<input id="btnAdd" type="button" value="Add" />' +
+              '<input type="button" value="Remove" class="remove" />'
+            );
+          }
+        </script>
+        <script type="text/javascript">
+          $("#mycheckbox").change(function () {
+            $("#mycheckboxdiv").toggle();
+          });
+        </script>
         <script src="js/main.js"></script>
         <script src="js/counterup.min.js"></script>
         <script src="js/waypoints.min.js"></script>
