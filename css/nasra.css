@@ -1093,7 +1093,7 @@ button.btn.inside {
   background-color: #06797e;
   color: white;
   transition: 0.8s;
-  width: 47%;
+
 }
 button.btn.inside:hover {
   background-color: white;
@@ -2126,19 +2126,17 @@ nav.navbar.navbar-expand-lg.img-nav.bg-white {
   font-family: "regular";
   color: #656565;
 }
-button.btn.btn-danger {
-  font-family: "regular";
-  transition: 0.7s;
-}
-button.btn.btn-danger:hover {
-  background-color: white;
-  color: red;
-  border: 1px solid red;
+.end-exame {
+  background-color: #CA3C31;
+  padding: 0.5rem;
+  color: white;
+  font-family: 'regular';
+  border-radius: 50px;
 }
 .Lesson-details h4 {
   font-family: "bold";
   font-size: 1.2rem;
-  margin-top: 18px;
+ 
 }
 button.btn.Lesson-details {
   font-family: "regular";
@@ -2151,9 +2149,15 @@ button.btn.Lesson-details:hover {
   color: #06797e;
   border: 1px solid #06797e;
 }
-button.btn.Lesson-details {
-  display: block;
-  margin-inline-start: auto;
+.test-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Lesson-details-1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .student-imge-text {
   border: 1px solid #0000000e;
@@ -2162,7 +2166,7 @@ button.btn.Lesson-details {
   text-align: center;
   border-radius: 10px;
   margin-top: 14px;
-  margin-left: 17px;
+  margin-left: 13px;
 }
 .student-imge-no {
   border: 1px solid #0000000e;
@@ -2182,6 +2186,47 @@ button.btn.Lesson-details {
   margin-top: 14px;
   margin-left: 42px;
   padding: 1rem 2rem;
+}
+.start-lesson {
+  background-color: #B2D23F;
+  color: white;
+  padding: 1rem;
+  border-radius: 50px;
+  font-family: 'regular';
+}
+.start-exame {
+  background-color: #B2D23F;
+  color: white;
+  padding: 1rem;
+  border-radius: 50px;
+  font-family: 'regular';
+}
+.student-imge-end {
+  border: 1px solid #0000000e;
+  width: fit-content;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 10px;
+  margin-top: 14px;
+  margin-left: 19px;
+  padding: 1rem 2rem;
+}
+button.btn.end {
+  background-color: #CA3C31;
+  color: white;
+  font-family: "regular";
+  transition: 0.7s;
+}
+button.btn.end:hover {
+  background-color: white;
+  color:#CA3C31;
+  border: 1px solid #CA3C31;
+  
+}
+.student-imge-end h4 {
+  margin-top: 10px;
+  font-family: "regular";
+  font-size: 0.7rem;
 }
 button.btn.start {
   background-color: #b2d23f;
@@ -2357,6 +2402,15 @@ button.btn.achieve:hover {
   margin-left: 0.5rem;
   border-radius: 50%;
 }
+h4.home-now {
+  background-color: #B2D23F;
+  color: white;
+  padding: 1rem;
+  border-radius: 50px;
+  font-family: 'regular';
+  font-size: 0.9rem;
+
+}
 .note-home p {
   font-family: bold;
 }
@@ -2520,12 +2574,7 @@ canvas#percentageJobs {
   font-family: "bold";
   font-size: 0.9rem;
 }
-.test-details {
-  margin-top: 26px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+
 button.btn.prepar {
   margin-top: 16px;
   background-color: #06797e;
@@ -2941,10 +2990,9 @@ button.btn.add:hover {
   background-color: white;
   border: 1px solid #06797e;
 }
-.add-exame h4{
+.add-exame h4 {
   font-family: bold;
   font-size: 1.1rem;
-
 }
 .quet {
   margin-top: 25px;
@@ -2974,16 +3022,284 @@ button.btn.add:hover {
   min-width: 46%;
 }
 .yes-tr h4 {
-  font-family: 'regular';
-
+  font-family: "regular";
 }
 .back {
   margin-top: 30px;
 }
-.back h4{
-color:#06797e ;
-font-size: 0.8rem;
+.back h4 {
+  color: #06797e;
+  font-size: 0.8rem;
 }
+.nav-link.add-rate{
+  color: #858585 !important;
+  width: 100%;
+}
+li.nav-item.add-rate {
+  width: 50%;
+  color: black !important;
+}
+ul#pills-tab\ add-rate {
+  background-color: #F7F7F7;
+  padding: 8px;
+}
+.nav-link.add-rate.active {
+  background-color: #B2D23F !important;
+  width: 100%;
+  color: white !important;
+  border-radius: 4px;
+}
+.modal-dialog.add-rate {
+  min-width: 60%;
+}
+input#Academic-evaluation {
+  position: unset;
+  margin-top: 5px;
+}
+input#Academic-evaluation-1{
+  position: unset;
+  margin-top: 5px;
+}
+input#Academic-evaluation-2{
+  position: unset;
+  margin-top: 5px;
+}
+input#Academic-evaluation-3{
+  position: unset;
+  margin-top: 5px;
+}
+input#Academic-evaluation-4{
+  position: unset;
+  margin-top: 5px;
+}
+input#Academic-evaluation-5{
+  position: unset;
+  margin-top: 5px;
+}
+input#Academic-evaluation-6{
+  position: unset;
+  margin-top: 5px;
+}
+input#Academic-evaluation-7{
+  position: unset;
+  margin-top: 5px;
+}
+label.form-check-label.Academic-evaluation {
+  font-family: "regular";
+}
+.head-Academic-evaluation {
+  margin-top: 18px;
+}
+.form-check.Academic-evaluation:hover {
+  border: 1px solid #B2D23F;
+}
+button.btn-close {
+  margin: unset !important;
+}
+.modal-body.viwe-lesson h4 {
+  font-family: "bold";
+  font-size: 0.8rem;
+  margin-top: 23px;
+ 
+}
+.modal-body.viwe-lesson span {
+  color: #656565;
+  font-family: "regular";
+}
+.modal-header.viwe-lesson h4 {
+  font-family: bold;
+  font-size: 1rem;
+}
+button.btn.viwe {
+  margin-top: 14px;
+  background-color: #06797e;
+  color: white;
+  font-size: 0.8rem;
+  padding: 1rem;
+  font-family: "regular";
+  transition: 0.7s;
+  border-radius: 10px;
+  width: 100%;
+}
+button.btn.viwe:hover {
+  color: #06797e;
+  background-color: white;
+  border: 1px solid #06797e;
+}
+button.btn.test-now {
+  
+  background-color: #06797e;
+  color: white;
+  font-size: 0.8rem;
+  padding: 1rem;
+  font-family: "regular";
+  transition: 0.7s;
+  border-radius: 10px;
+}
+button.btn.test-now:hover {
+  color: #06797e;
+  background-color: white;
+  border: 1px solid #06797e;
+}
+.test-non {
+  text-align: center;
+}
+.test-non h4 {
+  font-size: 0.8rem;
+  font-family: "bold";
+}
+.modal-header.test h4 {
+  font-size: 0.8rem;
+  font-family: "bold";
+}
+.main-Integrated-testing {
+  display: flex;
+  justify-content: center;
+  gap:10px;
+}
+.Integrated-testing-text h4 {
+  font-size: 0.9rem;
+  font-family: "bold";
+  width: 73%;
+}
+.Integrated-testing-text h3 {
+  font-size:0.7rem;
+  font-family: "regular";
+  color: #8D8D8D;
+}
+.viwe {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.modal-dialog.View-details {
+  min-width: 70%;
+}
+.text-details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1rem;
+  flex-wrap: wrap;
+}
+.text-details h4 {
+  font-size:0.7rem;
+  font-family: "regular";
+  color: #8D8D8D;
+}
+.text-details span {
+  font-family: "bold";
+  color: #000000;
+}
+.text-details svg {
+  margin-inline-end: 5px;
+  color: #06797E;
+}
+.worng h4 {
+font-family: "bold";
+font-size: 1rem;
+color:#06797e ;
+}
+.lest-details {
+  position: relative;
+  margin-inline-start: 3rem;
+}
+.lest-details h3{
+  font-family: "regular";
+  font-size: 0.9rem;
+  
+}
+.lest-details h6{
+  font-family: "light";
+font-size: 0.8rem;
+color:red ;
+}
+.lest-details p{
+color: #B2D23F;
+font-family: "light";
+font-size: 0.9rem;
+}
+.lest-details-1 h3 {
+  font-family: "regular";
+  font-size: 0.9rem;
+  
+}
+.lest-details-1 h6 {
+  font-family: "light";
+font-size: 0.8rem;
+color:red ;
+  
+}
+.lest-details-1 {
+  position: relative;
+  margin-inline-start: 3rem;
+  margin-top: 69px;
+}
+.lest-details-1 p {
+  color: #B2D23F;
+  font-family: "light";
+  font-size: 0.9rem;
+  
+}
+.lest-details::before {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  content: "1";
+    position: absolute;
+    background-color: #F7F7F7;
+    width: 35px;
+    height: 35px;
+    right: -51px;
+    top: 22px;
+    border-radius: 50%;
+    font-family: bold;
+}
+.lest-details-1::before {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  content: "2";
+    position: absolute;
+    background-color: #F7F7F7;
+    width: 35px;
+    height: 35px;
+    right: -51px;
+    top: 22px;
+    border-radius: 50%;
+    font-family: bold;
+}
+
+.line-af::after {
+  content: "";
+  position: absolute;
+  background-color: #06787e41;
+  width: 1px;
+  height: 105px;
+  right: calc(13px + 17.5px);
+  top: 250px;
+    
+    
+}
+button.btn.edit-bi {
+  background-color: #06797e;
+  color: white;
+  font-size: 0.8rem;
+  padding: 1rem;
+  font-family: "regular";
+  transition: 0.7s;
+  border-radius: 10px;
+  width: 100%;
+}
+button.btn.edit-bi:hover {
+  color: #06797e;
+  background-color: white;
+  border: 1px solid #06797e;
+}
+
 /* teacher */
 /* responsev */
 @media only screen and (max-width: 1500px) {
@@ -3411,6 +3727,15 @@ font-size: 0.8rem;
     display: unset;
     margin-top: 10px;
   }
+  .line-af::after {
+    content: "";
+    position: absolute;
+    background-color: #06787e41;
+    width: 1px;
+    height: 123px;
+    right: calc(13px + 17.5px);
+    top: 367px;
+}
 }
 
 /* responsev */
