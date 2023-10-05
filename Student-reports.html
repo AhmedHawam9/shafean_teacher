@@ -106,7 +106,9 @@
             <div class="menu">
               <i class="fa-solid fa-bars"></i>
             </div>
-            <a class="navbar-brand" href="#"><img src="img/title.png" alt="" /></a>
+            <a class="navbar-brand" href="#"
+              ><img src="img/title.png" alt=""
+            /></a>
             <button
               class="navbar-toggler"
               type="button"
@@ -119,18 +121,15 @@
               <i class="fa-solid fa-bars"></i>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              
-              <div class="col-lg-6">
-                
-              </div>
+              <div class="col-lg-6"></div>
               <div class="col-lg-6 col-md-12 col-12">
                 <div class="left">
                   <i class="fa-regular fa-bell"></i>
-    
+
                   <div class="nav-achivement">
                     <img src="mida/clup.png" alt="" /> <span>انجازاتي</span>
                   </div>
-    
+
                   <li class="nav-item dropdown">
                     <a
                       class="nav-link dropdown-toggle"
@@ -143,11 +142,19 @@
                       <img src="img/user.png" alt="" /> <span>أحمد أمجد</span>
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li><a class="dropdown-item" href="seting-acount.html"> اعدادات الحساب </a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li>
+                        <a class="dropdown-item" href="seting-acount.html">
+                          اعدادات الحساب
+                        </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Another action</a>
+                      </li>
                       <li><hr class="dropdown-divider" /></li>
                       <li>
-                        <a class="dropdown-item" href="#">Something else here</a>
+                        <a class="dropdown-item" href="#"
+                          >Something else here</a
+                        >
                       </li>
                     </ul>
                   </li>
@@ -158,60 +165,65 @@
         </nav>
         <div class="content-main-lib">
           <section class="container">
-          
             <div class="head-reports">
-                <h4>تقارير الطالب / تفاصيل الطالب / المقرأة</h4>
+              <h4>تقارير الطالب / تفاصيل الطالب / المقرأة</h4>
             </div>
-           <div class="content-reports">
-               <div class="container">
+            <div class="content-reports">
+              <div class="container">
                 <div class="row">
-                    <div class="col-lg-8 col-md-12 col-12">
-                        <form class="form-group">
-                            <i class="fa-solid fa-magnifying-glass teacher"></i>
-                            <input class="form-control teacher" type="search" placeholder="ابحث بإسم الدرس ...." aria-label="Search">
-                        </form>
+                  <div class="col-lg-8 col-md-12 col-12">
+                    <form class="form-group">
+                      <i class="fa-solid fa-magnifying-glass teacher"></i>
+                      <input
+                        class="form-control teacher"
+                        type="search"
+                        placeholder="ابحث بإسم الدرس ...."
+                        aria-label="Search"
+                      />
+                    </form>
+                  </div>
+                  <div class="col-lg-2 col-md-12 col-12">
+                   <div class="celender">
+                    <div class="form-group">
+                      <input
+                        class="form-control teacher"
+                        type="text"
+                        placeholder="12 مايو - 12 يوليو"
+                        onfocus="(this.type='date')"
+                        onblur="(this.type='text')"
+                      />
+                      <i class="fa-solid fa-calendar-day"></i>
                     </div>
+                   </div>
+                  </div>
+                  <div class="col-lg-2 col-md-12 col-12">
                     <div class="col-lg-2 col-md-12 col-12">
-                        <div class="form-group">
-                            <input
-                              class="form-control teacher"
-                              type="text"
-                              placeholder="12 مايو - 12 يوليو"
-                              onfocus="(this.type='date')"
-                              onblur="(this.type='text')"
-                            />
-                          </div>
+                      <div class="dropdown">
+                        <button
+                          class="btn btn-secondary dropdown-toggle teacher"
+                          type="button"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          دروس اليوم
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li>
+                            <a
+                              class="dropdown-item"
+                              href="Student-reports-end.html"
+                              >دروس المنتهية</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
                     </div>
-                    <div class="col-lg-2 col-md-12 col-12">
-                        
-                        <div class="col-lg-2 col-md-12 col-12">
-                            <div class="dropdown">
-                              <button
-                                class="btn btn-secondary dropdown-toggle teacher"
-                                type="button"
-                                data-bs-toggle="dropdown"
-                                aria-expanded="false"
-                              >
-                              دروس اليوم
-                              </button>
-                              <ul class="dropdown-menu">
-                                <li>
-                                  <a class="dropdown-item" href="Student-reports-end.html"
-                                    >دروس المنتهية</a
-                                  >
-                                </li>
-                              </ul>
-                            </div>
-                            
-                          </div>
-            
-                    </div>
-                   
+                  </div>
                 </div>
-              <div class="table-responsive">
-                <table class="table">
+                <div class="table-responsive">
+                  <table class="table">
                     <thead>
-                      <tr >
+                      <tr>
                         <th scope="col">الدرس</th>
                         <th scope="col">التاريخ</th>
                         <th scope="col">الحضور</th>
@@ -221,56 +233,74 @@
                     </thead>
                     <tbody>
                       <tr class="odd">
-                        <th scope="row">حصة لايف عن أول سورة البقرة من الآية 10 - 20 بالتجويد</th>
+                        <th scope="row">
+                          حصة لايف عن أول سورة البقرة من الآية 10 - 20 بالتجويد
+                        </th>
                         <td>1-2-2023 , 10 ص</td>
-                        <td class="text-success"><i class="fa-regular fa-circle-check"></i></td>
+                        <td class="text-success">
+                          <i class="fa-regular fa-circle-check"></i>
+                        </td>
                         <td>11ص</td>
                         <td>1 م</td>
                       </tr>
                       <tr>
-                        <th scope="row">حصة لايف عن أول سورة البقرة من الآية 10 - 20 بالتجويد</th>
+                        <th scope="row">
+                          حصة لايف عن أول سورة البقرة من الآية 10 - 20 بالتجويد
+                        </th>
                         <td>1-2-2023 , 10 ص</td>
                         <td>لم يبدأ</td>
                         <td>11ص</td>
                         <td>1 م</td>
                       </tr>
                       <tr class="odd">
-                        <th scope="row">حصة لايف عن أول سورة البقرة من الآية 10 - 20 بالتجويد</th>
+                        <th scope="row">
+                          حصة لايف عن أول سورة البقرة من الآية 10 - 20 بالتجويد
+                        </th>
                         <td>1-2-2023 , 10 ص</td>
                         <td>لم يبدأ</td>
                         <td>11ص</td>
                         <td>1 م</td>
                       </tr>
                       <tr>
-                        <th scope="row">حصة لايف عن أول سورة البقرة من الآية 10 - 20 بالتجويد</th>
+                        <th scope="row">
+                          حصة لايف عن أول سورة البقرة من الآية 10 - 20 بالتجويد
+                        </th>
                         <td>1-2-2023 , 10 ص</td>
                         <td>لم يبدأ</td>
                         <td>11ص</td>
                         <td>1 م</td>
                       </tr>
                       <tr class="odd">
-                        <th scope="row">حصة لايف عن أول سورة البقرة من الآية 10 - 20 بالتجويد</th>
+                        <th scope="row">
+                          حصة لايف عن أول سورة البقرة من الآية 10 - 20 بالتجويد
+                        </th>
                         <td>1-2-2023 , 10 ص</td>
                         <td>لم يبدأ</td>
                         <td>11ص</td>
                         <td>1 م</td>
                       </tr>
                       <tr>
-                        <th scope="row">حصة لايف عن أول سورة البقرة من الآية 10 - 20 بالتجويد</th>
+                        <th scope="row">
+                          حصة لايف عن أول سورة البقرة من الآية 10 - 20 بالتجويد
+                        </th>
                         <td>1-2-2023 , 10 ص</td>
                         <td>لم يبدأ</td>
                         <td>11ص</td>
                         <td>1 م</td>
                       </tr>
                       <tr class="odd">
-                        <th scope="row">حصة لايف عن أول سورة البقرة من الآية 10 - 20 بالتجويد</th>
+                        <th scope="row">
+                          حصة لايف عن أول سورة البقرة من الآية 10 - 20 بالتجويد
+                        </th>
                         <td>1-2-2023 , 10 ص</td>
                         <td>لم يبدأ</td>
                         <td>11ص</td>
                         <td>1 م</td>
                       </tr>
                       <tr>
-                        <th scope="row">حصة لايف عن أول سورة البقرة من الآية 10 - 20 بالتجويد</th>
+                        <th scope="row">
+                          حصة لايف عن أول سورة البقرة من الآية 10 - 20 بالتجويد
+                        </th>
                         <td>1-2-2023 , 10 ص</td>
                         <td>لم يبدأ</td>
                         <td>11ص</td>
@@ -278,12 +308,9 @@
                       </tr>
                     </tbody>
                   </table>
+                </div>
               </div>
-               </div>
-                
-          
-         
-           </div>
+            </div>
           </section>
         </div>
         <div class="end-page">
@@ -301,21 +328,20 @@
         </div>
         <div class="modal" id="out" tabindex="-1">
           <div class="modal-dialog out">
-             <div class="modal-content">
-              <div class="modal-header">
-           </div>
-          <div class="modal-body out">
-          <h4>هل تريد تسجيل الخروج؟</h4>
+            <div class="modal-content">
+              <div class="modal-header"></div>
+              <div class="modal-body out">
+                <h4>هل تريد تسجيل الخروج؟</h4>
 
-          <button type="submit" class="btn PrimaryButton">تأكيد </button>
+                <button type="submit" class="btn PrimaryButton">تأكيد</button>
 
-          <button type="submit" class="btn PrimaryButton">الغاء</button>
+                <button type="submit" class="btn PrimaryButton">الغاء</button>
+              </div>
+
+              <div class="modal-footer"></div>
+            </div>
           </div>
-
-      <div class="modal-footer"></div>
-      </div>
-      </div>
-           </div>
+        </div>
 
         <!-- ======= Chart onload =========== -->
         <script src="js/main.js"></script>

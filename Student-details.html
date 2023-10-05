@@ -165,7 +165,6 @@
         </nav>
         <div class="content-main-lib">
           <section class="container">
-           
             <div class="container">
               <div class="head-achieve">
                 <h3>الطلاب / تفاصيل الطالب</h3>
@@ -180,19 +179,44 @@
                       <i class="fa-solid fa-message"></i> ارسال رسالة
                     </button>
                     <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
                       <li>
-                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-item massage" href="#">
+                          <div class="massage-main">
+                            <div class="massage">
+                              <img src="mida/accordind.png" alt="" />
+                              <h4>محمد احمد</h4>
+                            </div>
+                            <div class="button-massage">
+                              <button type="button" class="btn btn-massage">
+                                مراسلة الطالب
+                              </button>
+                            </div>
+                          </div>
+                        </div>
                       </li>
                       <li>
-                        <a class="dropdown-item" href="#"
-                          >Something else here</a
-                        >
+                        <div class="dropdown-item massage" href="#">
+                          <div class="massage-main">
+                            <div class="massage">
+                              <img src="mida/accordind.png" alt="" />
+                              <h4>احمدمحمد</h4>
+                            </div>
+                            <div class="button-massage">
+                              <button type="button" class="btn btn-massage">
+                                مراسلة ولي الامر
+                              </button>
+                            </div>
+                          </div>
+                        </div>
                       </li>
                     </ul>
                   </div>
-                  <button type="button" class="btn achieve" data-bs-toggle="modal"
-                  data-bs-target="#add-rate">
+                  <button
+                    type="button"
+                    class="btn achieve"
+                    data-bs-toggle="modal"
+                    data-bs-target="#add-rate"
+                  >
                     اضافة تقييم عام للطالب
                   </button>
                 </div>
@@ -210,66 +234,62 @@
                       </div>
                     </div>
                     <div class="block">
-                      <a href="#">
+                      <a href="main-Student-reports.html">
                         <img src="mida/aaaaaaaa.png" alt="" />
                       </a>
-                      <a href="#">
+                      <a href="Electronic-reader.html">
                         <img src="mida/cccccccccccccc.png" alt="" />
                       </a>
                     </div>
                   </div>
                 </div>
                 <div class="col-lg-7 col-md-12 col-12">
-                   <div class="all-chart">
-                    <h4>
-                        التزام الطالب بأداء الواجبات
-                    </h4>
+                  <div class="all-chart">
+                    <h4>التزام الطالب بأداء الواجبات</h4>
                     <div class="main-chart">
-                        <canvas id="percentageJobs"></canvas>
+                      <canvas id="percentageJobs"></canvas>
                     </div>
-                   </div>
-                    <script>
-                        var barChartDatareport = {
-                          labels: [
-                            "Jun",
-                            "Mai",
-                            "Apr",
-                            "Mar",
-                            "Feb",
-                            "Jan",
-                            "Feb",
-                            "Apr",
-                            "Mai",
-                            "Mar",
-                            "Jan",
-                            
-                          ],
-                          datasets: [
-                            
-                            {
-                              type: "bar",
-                              label: "الواجبات",
-                              backgroundColor: "#24684F",
-                              borderColor: "#E8EFED",
-                              borderWidth: 1,
-                              tension: 0.1,
-                              data: [6, 9, 7, 3, 10, 7, 4, 6, 7, 10, 8],
-                            },
-                          ],
-                        };
+                  </div>
+                  <script>
+                    var barChartDatareport = {
+                      labels: [
+                        "Jun",
+                        "Mai",
+                        "Apr",
+                        "Mar",
+                        "Feb",
+                        "Jan",
+                        "Feb",
+                        "Apr",
+                        "Mai",
+                        "Mar",
+                        "Jan",
+                      ],
+                      datasets: [
+                        {
+                          type: "bar",
+                          label: "الواجبات",
+                          backgroundColor: "#24684F",
+                          borderColor: "#E8EFED",
+                          borderWidth: 1,
+                          tension: 0.1,
+                          data: [6, 9, 7, 3, 10, 7, 4, 6, 7, 10, 8],
+                        },
+                      ],
+                    };
 
-                        var chartOptionsreport = {
-                          responsive: true,
-                          maintainAspectRatio: false,
-                          legend: {
-                            position: "top",
-                          },
-                          title: {
-                            display: true,
-                            text: "Chart.js Bar Chart",
-                          },
-                        };
-                      </script>
+                    var chartOptionsreport = {
+                      responsive: true,
+                      maintainAspectRatio: false,
+                      legend: {
+                        position: "top",
+                      },
+                      title: {
+                        display: true,
+                        text: "Chart.js Bar Chart",
+                      },
+                    };
+                  </script>
                 </div>
               </div>
               <div class="row">
@@ -318,47 +338,44 @@
                   </div>
                 </div>
                 <div class="col-lg-7 col-md-12 col-12">
-                    <div class="all-chart">
-                        <h4>
-                            معدل تطور الطالب 
-                        </h4>
-                        <canvas id="percentageProjectsDay"></canvas>
-                        <script>
-                          var barChartDataProjectsDay = {
-                            labels: [
-                              "19 Sep",
-                              "26 Sep",
-                              "3 Oct",
-                              "10 Oct",
-                              "17 Oct",
-                            ],
-                            datasets: [
-                              {
-                                type: "line",
-                                label: "معدل تطور الطالب ",
-                                backgroundColor: "rgba(36, 104, 79, .1)",
-                                borderColor: "#24684F",
-                                fill: true,
-                                borderWidth: 1,
-                                tension: 0.1,
-                                data: [10, 7, 5, 6, 9, 7, 8],
-                              },
-                              
-                            ],
-                          };
-  
-                          var chartOptionsProjectsDay = {
-                            responsive: true,
-                            legend: {
-                              position: "top",
-                            },
-                            title: {
-                              display: true,
-                              text: "Chart.js Bar Chart",
-                            },
-                          };
-                        </script>
-                      </div>
+                  <div class="all-chart">
+                    <h4>معدل تطور الطالب</h4>
+                    <canvas id="percentageProjectsDay"></canvas>
+                    <script>
+                      var barChartDataProjectsDay = {
+                        labels: [
+                          "19 Sep",
+                          "26 Sep",
+                          "3 Oct",
+                          "10 Oct",
+                          "17 Oct",
+                        ],
+                        datasets: [
+                          {
+                            type: "line",
+                            label: "معدل تطور الطالب ",
+                            backgroundColor: "rgba(36, 104, 79, .1)",
+                            borderColor: "#24684F",
+                            fill: true,
+                            borderWidth: 1,
+                            tension: 0.1,
+                            data: [10, 7, 5, 6, 9, 7, 8],
+                          },
+                        ],
+                      };
+
+                      var chartOptionsProjectsDay = {
+                        responsive: true,
+                        legend: {
+                          position: "top",
+                        },
+                        title: {
+                          display: true,
+                          text: "Chart.js Bar Chart",
+                        },
+                      };
+                    </script>
+                  </div>
                 </div>
               </div>
             </div>
@@ -393,160 +410,251 @@
             </div>
           </div>
         </div>
-        <div class="modal fade" id="add-rate" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div
+          class="modal fade"
+          id="add-rate"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
           <div class="modal-dialog add-rate">
-          <div class="modal-content">
+            <div class="modal-content">
               <div class="modal-header add-rate">
-              
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
               </div>
               <div class="modal-body add-rate">
-                <ul class="nav nav-pills student-rate-te" id="pills-tab add-rate" role="tablist">
+                <ul
+                  class="nav nav-pills student-rate-te"
+                  id="pills-tab add-rate"
+                  role="tablist"
+                >
                   <li class="nav-item add-rate" role="presentation">
-                    <button class="nav-link active add-rate" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">تقييم اكاديمي</button>
+                    <button
+                      class="nav-link active add-rate"
+                      id="pills-home-tab"
+                      data-bs-toggle="pill"
+                      data-bs-target="#pills-home"
+                      type="button"
+                      role="tab"
+                      aria-controls="pills-home"
+                      aria-selected="true"
+                    >
+                      تقييم اكاديمي
+                    </button>
                   </li>
                   <li class="nav-item add-rate" role="presentation">
-                    <button class="nav-link add-rate" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">تقييم سلوكي</button>
+                    <button
+                      class="nav-link add-rate"
+                      id="pills-profile-tab"
+                      data-bs-toggle="pill"
+                      data-bs-target="#pills-profile"
+                      type="button"
+                      role="tab"
+                      aria-controls="pills-profile"
+                      aria-selected="false"
+                    >
+                      تقييم سلوكي
+                    </button>
                   </li>
                 </ul>
                 <div class="tab-content student" id="pills-tabContent">
-                  <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-                      <div class="main-Academic-evaluation">
-                          <div class="row">
-                              <div class="col-lg-8 col-md-12 col-12">
-                                  <div class="form-group">
-                                      <label class="grenal" for="">السورة</label>
-                                      <select class="selectpicker">
-                                        <option value="" disabled selected hidden>
-                                          البقرة
-                                        </option>
-                                        <option>0</option>
-                                        <option>0</option>
-                                        <option>0</option>
-                                      </select>
-                                    </div>
-                              </div>
-                              <div class="col-lg-4 col-md-12 col-12">
-                                  <div class="form-group">
-                                      <label class="grenal" for="">التفاصيل</label>
-                                      <select class="selectpicker">
-                                        <option value="" disabled selected hidden>
-                                          شرح و مراجعة
-                                        </option>
-                                        <option>0</option>
-                                        <option>0</option>
-                                        <option>0</option>
-                                      </select>
-                                    </div>
-                              </div>
+                  <div
+                    class="tab-pane fade show active"
+                    id="pills-home"
+                    role="tabpanel"
+                    aria-labelledby="pills-home-tab"
+                  >
+                    <div class="main-Academic-evaluation">
+                      <div class="row">
+                        <div class="col-lg-8 col-md-12 col-12">
+                          <div class="form-group">
+                            <label class="grenal" for="">السورة</label>
+                            <select class="selectpicker">
+                              <option value="" disabled selected hidden>
+                                البقرة
+                              </option>
+                              <option>0</option>
+                              <option>0</option>
+                              <option>0</option>
+                            </select>
                           </div>
-                          <div class="row">
-                              <div class="col-lg-6 col-md-12 col-12">
-                                  <div class="form-group">
-                                      <label for="" class="grenal" >من</label>
-                                      <input type="text" class="form-control">
-                                  </div>
-                              </div>
-                              <div class="col-lg-6 col-md-12 col-12">
-                                  <div class="form-group">
-                                      <label for="" class="grenal" >الي</label>
-                                      <input type="text" class="form-control">
-                                  </div>
-                              </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12 col-12">
+                          <div class="form-group">
+                            <label class="grenal" for="">التفاصيل</label>
+                            <select class="selectpicker">
+                              <option value="" disabled selected hidden>
+                                شرح و مراجعة
+                              </option>
+                              <option>0</option>
+                              <option>0</option>
+                              <option>0</option>
+                            </select>
                           </div>
+                        </div>
                       </div>
-                      <div class="Academic-evaluation">
-                          <div class="head-Academic-evaluation">
-                              <h4>ما هو تقييمك الاكاديمي للطالب؟</h4>
+                      <div class="row">
+                        <div class="col-lg-6 col-md-12 col-12">
+                          <div class="form-group">
+                            <label for="" class="grenal">من</label>
+                            <input type="text" class="form-control" />
                           </div>
-                          <div class="radio Academic-evaluation">
-                              <div class="form-check Academic-evaluation">
-                                  <label class="form-check-label Academic-evaluation" for="Academic-evaluation">
-                                      لم يعرض الطالب المُقرر اجابته
-                                    </label>
-                                  <input class="form-check-input Academic-evaluation" type="radio" name="Academic-evaluation" id="Academic-evaluation">
-                                 
-                                </div>
-                                <div class="form-check Academic-evaluation">
-                                  <label class="form-check-label Academic-evaluation" for="Academic-evaluation-1">
-                                      يُعيد الطالب المقرر اجابته
-                                    </label>
-                                  <input class="form-check-input Academic-evaluation" type="radio" name="Academic-evaluation" id="Academic-evaluation-1">
-                                 
-                                </div>
-                                <div class="form-check Academic-evaluation">
-                                  <label class="form-check-label Academic-evaluation" for="Academic-evaluation-2">
-                                      اداء حسن المُقرر
-                                    </label>
-                                  <input class="form-check-input Academic-evaluation" type="radio" name="Academic-evaluation" id="Academic-evaluation-2">
-                                 
-                                </div>
-                                <div class="form-check Academic-evaluation">
-                                  <label class="form-check-label Academic-evaluation" for="Academic-evaluation-3">
-                                      اداء جيد المقرر
-                                    </label>
-                                  <input class="form-check-input Academic-evaluation" type="radio" name="Academic-evaluation" id="Academic-evaluation-3">
-                                 
-                                </div>
-                                <div class="form-check Academic-evaluation">
-                                  <label class="form-check-label Academic-evaluation" for="Academic-evaluation-4">
-                                      ادي الطالب المقرر بإمتياز 
-                                    </label>
-                                  <input class="form-check-input Academic-evaluation" type="radio" name="Academic-evaluation" id="Academic-evaluation-4">
-                                 
-                                </div>
-                             
+                        </div>
+                        <div class="col-lg-6 col-md-12 col-12">
+                          <div class="form-group">
+                            <label for="" class="grenal">الي</label>
+                            <input type="text" class="form-control" />
                           </div>
+                        </div>
                       </div>
+                    </div>
+                    <div class="Academic-evaluation">
+                      <div class="head-Academic-evaluation">
+                        <h4>ما هو تقييمك الاكاديمي للطالب؟</h4>
+                      </div>
+                      <div class="radio Academic-evaluation">
+                        <div class="form-check Academic-evaluation">
+                          <label
+                            class="form-check-label Academic-evaluation"
+                            for="Academic-evaluation"
+                          >
+                            لم يعرض الطالب المُقرر اجابته
+                          </label>
+                          <input
+                            class="form-check-input Academic-evaluation"
+                            type="radio"
+                            name="Academic-evaluation"
+                            id="Academic-evaluation"
+                          />
+                        </div>
+                        <div class="form-check Academic-evaluation">
+                          <label
+                            class="form-check-label Academic-evaluation"
+                            for="Academic-evaluation-1"
+                          >
+                            يُعيد الطالب المقرر اجابته
+                          </label>
+                          <input
+                            class="form-check-input Academic-evaluation"
+                            type="radio"
+                            name="Academic-evaluation"
+                            id="Academic-evaluation-1"
+                          />
+                        </div>
+                        <div class="form-check Academic-evaluation">
+                          <label
+                            class="form-check-label Academic-evaluation"
+                            for="Academic-evaluation-2"
+                          >
+                            اداء حسن المُقرر
+                          </label>
+                          <input
+                            class="form-check-input Academic-evaluation"
+                            type="radio"
+                            name="Academic-evaluation"
+                            id="Academic-evaluation-2"
+                          />
+                        </div>
+                        <div class="form-check Academic-evaluation">
+                          <label
+                            class="form-check-label Academic-evaluation"
+                            for="Academic-evaluation-3"
+                          >
+                            اداء جيد المقرر
+                          </label>
+                          <input
+                            class="form-check-input Academic-evaluation"
+                            type="radio"
+                            name="Academic-evaluation"
+                            id="Academic-evaluation-3"
+                          />
+                        </div>
+                        <div class="form-check Academic-evaluation">
+                          <label
+                            class="form-check-label Academic-evaluation"
+                            for="Academic-evaluation-4"
+                          >
+                            ادي الطالب المقرر بإمتياز
+                          </label>
+                          <input
+                            class="form-check-input Academic-evaluation"
+                            type="radio"
+                            name="Academic-evaluation"
+                            id="Academic-evaluation-4"
+                          />
+                        </div>
+                      </div>
+                    </div>
                   </div>
                   <!-- two -->
-                  <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-                      <div class="Academic-evaluation">
-                          <div class="head-Academic-evaluation">
-                              <h4> ما هو تقييمك السلوكي للطالب ؟</h4>
-                          </div>
-                          <div class="radio Academic-evaluation">
-                              <div class="form-check Academic-evaluation">
-                                  <label class="form-check-label Academic-evaluation" for="Academic-evaluation-5">
-                                      يحتاج متابعة من ولي الامر
-                                    </label>
-                                  <input class="form-check-input Academic-evaluation" type="radio" name="Academic-evaluation" id="Academic-evaluation-5">
-                                 
-                                </div>
-                                <div class="form-check Academic-evaluation">
-                                  <label class="form-check-label Academic-evaluation" for="Academic-evaluation-6">
-                                      يبني علية التركيز اكثر
-                                    </label>
-                                  <input class="form-check-input Academic-evaluation" type="radio" name="Academic-evaluation" id="Academic-evaluation-6">
-                                 
-                                </div>
-                                <div class="form-check Academic-evaluation">
-                                  <label class="form-check-label Academic-evaluation" for="Academic-evaluation-7">
-                                      مواظب و هادئ الطباع
-                                    </label>
-                                  <input class="form-check-input Academic-evaluation" type="radio" name="Academic-evaluation" id="Academic-evaluation-7">
-                                 
-                                </div>
-                               
-                               
-                             
-                          </div>
+                  <div
+                    class="tab-pane fade"
+                    id="pills-profile"
+                    role="tabpanel"
+                    aria-labelledby="pills-profile-tab"
+                  >
+                    <div class="Academic-evaluation">
+                      <div class="head-Academic-evaluation">
+                        <h4>ما هو تقييمك السلوكي للطالب ؟</h4>
                       </div>
+                      <div class="radio Academic-evaluation">
+                        <div class="form-check Academic-evaluation">
+                          <label
+                            class="form-check-label Academic-evaluation"
+                            for="Academic-evaluation-5"
+                          >
+                            يحتاج متابعة من ولي الامر
+                          </label>
+                          <input
+                            class="form-check-input Academic-evaluation"
+                            type="radio"
+                            name="Academic-evaluation"
+                            id="Academic-evaluation-5"
+                          />
+                        </div>
+                        <div class="form-check Academic-evaluation">
+                          <label
+                            class="form-check-label Academic-evaluation"
+                            for="Academic-evaluation-6"
+                          >
+                            يبني علية التركيز اكثر
+                          </label>
+                          <input
+                            class="form-check-input Academic-evaluation"
+                            type="radio"
+                            name="Academic-evaluation"
+                            id="Academic-evaluation-6"
+                          />
+                        </div>
+                        <div class="form-check Academic-evaluation">
+                          <label
+                            class="form-check-label Academic-evaluation"
+                            for="Academic-evaluation-7"
+                          >
+                            مواظب و هادئ الطباع
+                          </label>
+                          <input
+                            class="form-check-input Academic-evaluation"
+                            type="radio"
+                            name="Academic-evaluation"
+                            id="Academic-evaluation-7"
+                          />
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
-                <button
-              type="button"
-              class="btn add"
-            >
-              اضافة
-            </button>
+                <button type="button" class="btn add">اضافة</button>
               </div>
-              <div class="modal-footer">
-              
-              </div>
+              <div class="modal-footer"></div>
+            </div>
           </div>
-          </div>
-      </div>
+        </div>
         <!-- counter -->
         <script src="js/counterup.min.js"></script>
         <script src="js/waypoints.min.js"></script>
@@ -560,22 +668,22 @@
 
         <!-- ======= Chart onload =========== -->
         <script>
-              window.onload = function () {
-        var percentageJobs = document
-          .getElementById("percentageJobs")
-          .getContext("2d");
-        window.myBar = new Chart(percentageJobs, {
-          data: barChartDatareport,
-          options: chartOptionsreport,
-        });
-        var percentageProjectsDay = document
-          .getElementById("percentageProjectsDay")
-          .getContext("2d");
-        window.myBar = new Chart(percentageProjectsDay, {
-          data: barChartDataProjectsDay,
-          options: chartOptionsProjectsDay,
-        });
-    }
+          window.onload = function () {
+            var percentageJobs = document
+              .getElementById("percentageJobs")
+              .getContext("2d");
+            window.myBar = new Chart(percentageJobs, {
+              data: barChartDatareport,
+              options: chartOptionsreport,
+            });
+            var percentageProjectsDay = document
+              .getElementById("percentageProjectsDay")
+              .getContext("2d");
+            window.myBar = new Chart(percentageProjectsDay, {
+              data: barChartDataProjectsDay,
+              options: chartOptionsProjectsDay,
+            });
+          };
         </script>
         <script src="js/main.js"></script>
         <script src="js/counterup.min.js"></script>

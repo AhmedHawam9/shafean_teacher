@@ -106,7 +106,9 @@
             <div class="menu">
               <i class="fa-solid fa-bars"></i>
             </div>
-            <a class="navbar-brand" href="#"><img src="img/title.png" alt="" /></a>
+            <a class="navbar-brand" href="#"
+              ><img src="img/title.png" alt=""
+            /></a>
             <button
               class="navbar-toggler"
               type="button"
@@ -119,18 +121,15 @@
               <i class="fa-solid fa-bars"></i>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              
-              <div class="col-lg-6">
-                
-              </div>
+              <div class="col-lg-6"></div>
               <div class="col-lg-6 col-md-12 col-12">
                 <div class="left">
                   <i class="fa-regular fa-bell"></i>
-    
+
                   <div class="nav-achivement">
                     <img src="mida/clup.png" alt="" /> <span>انجازاتي</span>
                   </div>
-    
+
                   <li class="nav-item dropdown">
                     <a
                       class="nav-link dropdown-toggle"
@@ -143,11 +142,19 @@
                       <img src="img/user.png" alt="" /> <span>أحمد أمجد</span>
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li><a class="dropdown-item" href="seting-acount.html"> اعدادات الحساب </a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li>
+                        <a class="dropdown-item" href="seting-acount.html">
+                          اعدادات الحساب
+                        </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Another action</a>
+                      </li>
                       <li><hr class="dropdown-divider" /></li>
                       <li>
-                        <a class="dropdown-item" href="#">Something else here</a>
+                        <a class="dropdown-item" href="#"
+                          >Something else here</a
+                        >
                       </li>
                     </ul>
                   </li>
@@ -157,130 +164,118 @@
           </div>
         </nav>
         <div class="content-main-lib">
-         <div class="container">
+          <div class="container">
             <div class="row">
-                <div class="col-lg-7 col-md-12 col-12">
-                    <div class="main-home">
-                        <a href="Electronic-reader.html">
-                            <img src="mida/maq.png" alt="">
-                        </a>
-                        <a href="Groups.html">
-                            <img src="mida/grop.png" alt="">
-                        </a>
-                        <a href="Achievements-homework.html">
-                            <img src="mida/eng.png" alt="">
-                        </a>
-                        <a href="the-exams.html">
-                            <img src="mida/tes.png" alt="">
-                        </a>
-                    </div>
+              <div class="col-lg-7 col-md-12 col-12">
+                <div class="main-home">
+                  <a href="Electronic-reader.html">
+                    <img src="mida/maq.png" alt="" />
+                  </a>
+                  <a href="Groups.html">
+                    <img src="mida/grop.png" alt="" />
+                  </a>
+                  <a href="Achievements-homework.html">
+                    <img src="mida/eng.png" alt="" />
+                  </a>
+                  <a href="the-exams.html">
+                    <img src="mida/tes.png" alt="" />
+                  </a>
                 </div>
-                <div class="col-lg-5 col-md-12 col-12">
-                    <div class="main-site">
-                        <h3>معدل الاحصائيات على الموقع</h3>
-                        <div class="note-home">
-                            <img src="mida/play.png" alt="" />
-                            <div class="cardachivement">
-                              <h4>اجمالى الدروس</h4>
-                              <p >25 درس</p>
-                            </div>
-                          </div>
-                          <div class="note-home">
-                            
-                            <img src="mida/users.png" alt="" />
-                            <div class="cardachivement">
-                              <h4>اجمالى الطلاب</h4>
-                              <p >200 طالب</p>
-                            </div>
-                          </div>
-                          <div class="note-home">
-                            <img src="mida/user-group.png" alt="" />
-                            <div class="cardachivement">
-                              <h4>المجموعات</h4>
-                              <p>4</p>
-                            </div>
-                          </div>
-                          <div class="note-home">
-                            <img src="mida/star.png" alt="" />
-                            <div class="cardachivement">
-                              <h4>التقييمات</h4>
-                              <p>250 تقييم</p>
-                            </div>
-                          </div>
+              </div>
+              <div class="col-lg-5 col-md-12 col-12">
+                <div class="main-site">
+                  <h3>معدل الاحصائيات على الموقع</h3>
+                  <div class="note-home">
+                    <img src="mida/play.png" alt="" />
+                    <div class="cardachivement">
+                      <h4>اجمالى الدروس</h4>
+                      <p>25 درس</p>
                     </div>
-                </div>
-            </div>
-            <div class="row">
-            <div class="col-lg-7 col-md-12 col-12">
-                <div class="all-chart-1">
-                    <h4>
-                        معدل تطور الطالب 
-                    </h4>
-                    <canvas id="percentageProjectsDay"></canvas>
-                    <script>
-                      var barChartDataProjectsDay = {
-                        labels: [
-                          "19 Sep",
-                          "26 Sep",
-                          "3 Oct",
-                          "10 Oct",
-                          "17 Oct",
-                        ],
-                        datasets: [
-                          {
-                            type: "line",
-                            label: "معدل تطور الطالب ",
-                            backgroundColor: "rgba(36, 104, 79, .1)",
-                            borderColor: "#24684F",
-                            fill: true,
-                            borderWidth: 1,
-                            tension: 0.1,
-                            data: [10, 7, 5, 6, 9, 7, 8],
-                          },
-                          
-                        ],
-                      };
-
-                      var chartOptionsProjectsDay = {
-                        responsive: true,
-                        legend: {
-                          position: "top",
-                        },
-                        title: {
-                          display: true,
-                          text: "Chart.js Bar Chart",
-                        },
-                      };
-                    </script>
                   </div>
-            </div>
-            <div class="col-lg-5 col-md-12 col-12">
-                <div class="main-active">
-                    <div class="active-1">
-                        <h4>النشاطات القادمة</h4>
-                        <a href="#"><p>
-                            عرض الكل
-                        </p></a>
+                  <div class="note-home">
+                    <img src="mida/users.png" alt="" />
+                    <div class="cardachivement">
+                      <h4>اجمالى الطلاب</h4>
+                      <p>200 طالب</p>
                     </div>
-                    <div class="act">
-                        <h4>حصة لايف على الجزء الأول من سورة البقرة بالتجويد</h4>
-                        <p>مجموعة العهد الحديث</p>
-                        <img src="mida/22.png" alt="">
+                  </div>
+                  <div class="note-home">
+                    <img src="mida/user-group.png" alt="" />
+                    <div class="cardachivement">
+                      <h4>المجموعات</h4>
+                      <p>4</p>
                     </div>
-                    <div class="act">
-                        <h4>حصة لايف على الجزء الأول من سورة البقرة بالتجويد</h4>
-                        <p>مجموعة العهد الحديث</p>
-                        <img src="mida/22.png" alt="">
+                  </div>
+                  <div class="note-home">
+                    <img src="mida/star.png" alt="" />
+                    <div class="cardachivement">
+                      <h4>التقييمات</h4>
+                      <p>250 تقييم</p>
                     </div>
-                    <div class="act">
-                        <h4>حصة لايف على الجزء الأول من سورة البقرة بالتجويد</h4>
-                        <p>مجموعة العهد الحديث</p>
-                        <img src="mida/22.png" alt="">
-                    </div>
+                  </div>
                 </div>
+              </div>
             </div>
+            <div class="row">
+              <div class="col-lg-7 col-md-12 col-12">
+                <div class="all-chart-1">
+                  <h4>معدل تطور الطالب</h4>
+                  <canvas id="percentageProjectsDay"></canvas>
+                  <script>
+                    var barChartDataProjectsDay = {
+                      labels: ["19 Sep", "26 Sep", "3 Oct", "10 Oct", "17 Oct"],
+                      datasets: [
+                        {
+                          type: "line",
+                          label: "معدل تطور الطالب ",
+                          backgroundColor: "rgba(36, 104, 79, .1)",
+                          borderColor: "#24684F",
+                          fill: true,
+                          borderWidth: 1,
+                          tension: 0.1,
+                          data: [10, 7, 5, 6, 9, 7, 8],
+                        },
+                      ],
+                    };
+
+                    var chartOptionsProjectsDay = {
+                      responsive: true,
+                      legend: {
+                        position: "top",
+                      },
+                      title: {
+                        display: true,
+                        text: "Chart.js Bar Chart",
+                      },
+                    };
+                  </script>
+                </div>
+              </div>
+              <div class="col-lg-5 col-md-12 col-12">
+                <div class="main-active">
+                  <div class="active-1">
+                    <h4>النشاطات القادمة</h4>
+                    <a href="#"><p>عرض الكل</p></a>
+                  </div>
+                  <div class="act">
+                    <h4>حصة لايف على الجزء الأول من سورة البقرة بالتجويد</h4>
+                    <p>مجموعة العهد الحديث</p>
+                    <img src="mida/22.png" alt="" />
+                  </div>
+                  <div class="act">
+                    <h4>حصة لايف على الجزء الأول من سورة البقرة بالتجويد</h4>
+                    <p>مجموعة العهد الحديث</p>
+                    <img src="mida/22.png" alt="" />
+                  </div>
+                  <div class="act">
+                    <h4>حصة لايف على الجزء الأول من سورة البقرة بالتجويد</h4>
+                    <p>مجموعة العهد الحديث</p>
+                    <img src="mida/22.png" alt="" />
+                  </div>
+                </div>
+              </div>
             </div>
-         </div>
+          </div>
         </div>
         <div class="end-page">
           <div class="container">
@@ -297,32 +292,30 @@
         </div>
         <div class="modal" id="out" tabindex="-1">
           <div class="modal-dialog out">
-             <div class="modal-content">
-              <div class="modal-header">
-           </div>
-          <div class="modal-body out">
-          <h4>هل تريد تسجيل الخروج؟</h4>
+            <div class="modal-content">
+              <div class="modal-header"></div>
+              <div class="modal-body out">
+                <h4>هل تريد تسجيل الخروج؟</h4>
 
-          <button type="submit" class="btn PrimaryButton">تأكيد </button>
+                <button type="submit" class="btn PrimaryButton">تأكيد</button>
 
-          <button type="submit" class="btn PrimaryButton">الغاء</button>
+                <button type="submit" class="btn PrimaryButton">الغاء</button>
+              </div>
+
+              <div class="modal-footer"></div>
+            </div>
           </div>
-
-      <div class="modal-footer"></div>
-      </div>
-      </div>
-           </div>
-          
+        </div>
 
         <!-- ======= Chart onload =========== -->
         <script>
-             var percentageProjectsDay = document
-          .getElementById("percentageProjectsDay")
-          .getContext("2d");
-        window.myBar = new Chart(percentageProjectsDay, {
-          data: barChartDataProjectsDay,
-          options: chartOptionsProjectsDay,
-        });
+          var percentageProjectsDay = document
+            .getElementById("percentageProjectsDay")
+            .getContext("2d");
+          window.myBar = new Chart(percentageProjectsDay, {
+            data: barChartDataProjectsDay,
+            options: chartOptionsProjectsDay,
+          });
         </script>
         <script src="js/main.js"></script>
         <script src="js/counterup.min.js"></script>

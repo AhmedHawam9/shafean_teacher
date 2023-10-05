@@ -24,7 +24,7 @@
     <script src="js/dataTables.bootstrap5.min.js"></script>
     <!-- ? Custom JavaScript -->
 
-    <title>اضافة واجب جديد</title>
+    <title>اضافة سؤال جديد</title>
   </head>
   <body data-spy="scroll" data-target=".navbar">
     <div class="d-flex sidemobile p-0">
@@ -163,59 +163,123 @@
             </div>
           </div>
         </nav>
-        <div class="content-main">
+        <div class="content-main-new">
           <section class="container">
             <div class="main-preparation">
               <div class="header-preparation">
-                <h4>اضافة انجاز جديد</h4>
+                <h4>اضافة سؤال جديد</h4>
               </div>
               <div class="row">
                 <div class="col-lg-6 col-md-12 col-12">
                   <div class="form-group">
-                    <label class="grenal" for="">المجموعة</label>
+                    <label class="grenal" for="">نوع السؤال</label>
                     <select class="selectpicker">
                       <option value="" disabled selected hidden>
-                        اختر المجموعة التى تكتب لها الواجب
+                        معاني صور
                       </option>
                       <option>0</option>
                       <option>0</option>
                       <option>0</option>
                     </select>
                   </div>
-                  <div class="form-group">
-                    <label class="grenal" for="">السورة</label>
-                    <input
-                      type="text"
-                      class="form-control"
-                      placeholder="ادخل اسم الواجب"
-                    />
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-6 col-md-12 col-12">
+                  <div class="imges">
+                    <div class="hed-2">
+                      <h4>
+                        ادخل عدد من الصور وقم بكتابة المعني من الصور فى الفورم
+                        بالاسفل لتطابقها مع تسجيل الطالب
+                      </h4>
+                    </div>
+                    <div class="imegs-main">
+                      <div class="form-group">
+                        <div id="AppendAnswer" class="AppendAnswer">
+                          <label for="imageCover" class="upload_file_label">
+                            <i class="fa-regular fa-image"></i>
+                            <p>اضف الصوره هنا من خلال سحب الصورة</p>
+                            <span id="fileNameImage">او اضغط هنا</span>
+                          </label>
+                          <input
+                            type="file"
+                            name=""
+                            id="imageCover"
+                            class="form-control"
+                            accept="image/*"
+                            hidden
+                          />
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <div id="AppendAnswer" class="AppendAnswer">
+                          <label for="imageCover-1" class="upload_file_label">
+                            <i class="fa-regular fa-image"></i>
+                            <p>اضف الصوره هنا من خلال سحب الصورة</p>
+                            <span id="fileNameImage-1">او اضغط هنا</span>
+                          </label>
+                          <input
+                            type="file"
+                            name=""
+                            id="imageCover-1"
+                            class="form-control"
+                            accept="image/*"
+                            hidden
+                          />
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <div id="AppendAnswer" class="AppendAnswer">
+                          <label for="imageCover-2" class="upload_file_label">
+                            <i class="fa-regular fa-image"></i>
+                            <p>اضف الصوره هنا من خلال سحب الصورة</p>
+                            <span id="fileNameImage-2">او اضغط هنا</span>
+                          </label>
+                          <input
+                            type="file"
+                            name=""
+                            id="imageCover-2"
+                            class="form-control"
+                            accept="image/*"
+                            hidden
+                          />
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
               <div class="row">
                 <div class="col-lg-6 col-md-12 col-12">
                   <div class="form-group">
-                    <label class="grenal" for="">تاريخ اضافة الواجب</label>
+                    <label class="grenal" for="">معنى الصور</label>
                     <input
-                      class="form-control"
                       type="text"
-                      placeholder="2023-5-8"
-                      onfocus="(this.type='date')"
-                      onblur="(this.type='text')"
+                      class="form-control"
+                      placeholder="ادخل معنى الصور"
                     />
                   </div>
                 </div>
               </div>
               <div class="row">
+                <div class="col-lg-8 col-md-12 col-12">
+                  <div class="button-added">
+                    <button
+                      type="button"
+                      class="btn added"
+                      data-bs-toggle="modal"
+                      data-bs-target="#follow"
+                    >
+                      اضف سؤال جديد
+                    </button>
+                  </div>
+                </div>
                 <div class="col-lg-6 col-md-12 col-12">
-                  <button
-                    type="button"
-                    class="btn follwo"
-                    data-bs-toggle="modal"
-                    data-bs-target="#follow"
-                  >
-                    المتابعة
-                  </button>
+                  <div class="button-added">
+                    <button type="button" class="btn added-add">
+                      رفع السؤال الآن
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
@@ -261,11 +325,15 @@
                   </h4>
                 </div>
                 <div class="button-follow">
-                  <a href="Please-choose.html">
-                    <button type="button" class="btn follwo">
-                      نعم , اختر سؤال
-                    </button>
-                  </a>
+                  <button
+                    type="button"
+                    class="btn follwo"
+                    data-bs-toggle="modal"
+                    data-bs-target="#yes"
+                  >
+                    نعم , اختر سؤال
+                  </button>
+
                   <button
                     type="button"
                     class="btn follwo"
@@ -353,7 +421,7 @@
                   </script>
                 </div>
                 <div class="form-group">
-                  <div id="AppendAnswer" class="AppendAnswer">
+                  <div id="AppendAnswer-new" class="AppendAnswer">
                     <div class="d-flex align-items-center append_answer">
                       <input
                         type="text"
@@ -373,16 +441,16 @@
                     </div>
                   </div>
                   <small class="d-block text-start"
-                    ><button id="btnAdd" class="btn btnAdd" type="button">
+                    ><button id="btnAdd-new" class="btn btnAdd" type="button">
                       + إضافة إجابة جديدة
                     </button></small
                   >
                   <script>
                     $(function () {
-                      $("#btnAdd").bind("click", function () {
+                      $("#btnAdd-new").bind("click", function () {
                         var div = $("<div />");
                         div.html(GetDynamicNewAnswer(""));
-                        $("#AppendAnswer").append(div);
+                        $("#AppendAnswer-new").append(div);
                       });
                       $("body").on("click", ".remove", function () {
                         $(this).closest("div").remove();
@@ -399,18 +467,127 @@
                     }
                   </script>
                 </div>
-                <a href="Added-questions.html">
-                  <button type="button" class="btn follwo">
-                    رفع السؤال الآن
-                  </button>
-                </a>
+                <div class="form-group">
+                  <label class="grenal" for="">نقاط السؤال</label>
+                  <input type="text" class="form-control" placeholder="10" />
+                </div>
+                <button type="button" class="btn follwo">
+                  اضافة السؤال الآن
+                </button>
               </div>
               <div class="modal-footer"></div>
             </div>
           </div>
         </div>
+        <div class="modal" id="yes" tabindex="-1">
+          <div class="modal-dialog yes">
+            <div class="modal-content">
+              <div class="modal-header">
+                <div class="yes-tr">
+                  <h4>
+                    من فضلك اختر السؤال الذي تريد اضافتة الي او قم بالبحث عنه
+                  </h4>
+                </div>
+              </div>
+              <div class="modal-body yes">
+                <form class="form-group">
+                  <i class="fa-solid fa-magnifying-glass teacher"></i>
+                  <input
+                    class="form-control"
+                    type="search"
+                    placeholder="ابحث بإسم الدرس ...."
+                    aria-label="Search"
+                  />
+                </form>
+                <div class="hed">
+                  <h4>كل الاسالة</h4>
+                </div>
+                <div class="choose">
+                  <h4>
+                    سؤال علي الجزء الاول من سورة البقرة بالتجويد و تسميع من
+                    الاية 1 حتي 12
+                  </h4>
+                  <input
+                    type="radio"
+                    class="form-check-input-mod"
+                    name="radioAnswer"
+                    id=""
+                    checked
+                  />
+                </div>
+                <div class="choose">
+                  <h4>
+                    سؤال علي الجزء الاول من سورة البقرة بالتجويد و تسميع من
+                    الاية 1 حتي 12
+                  </h4>
+                  <input
+                    type="radio"
+                    class="form-check-input-mod"
+                    name="radioAnswer"
+                    id=""
+                    checked
+                  />
+                </div>
+                <div class="choose">
+                  <h4>
+                    سؤال علي الجزء الاول من سورة البقرة بالتجويد و تسميع من
+                    الاية 1 حتي 12
+                  </h4>
+                  <input
+                    type="radio"
+                    class="form-check-input-mod"
+                    name="radioAnswer"
+                    id=""
+                    checked
+                  />
+                </div>
+                <div class="choose">
+                  <h4>
+                    سؤال علي الجزء الاول من سورة البقرة بالتجويد و تسميع من
+                    الاية 1 حتي 12
+                  </h4>
+                  <input
+                    type="radio"
+                    class="form-check-input-mod"
+                    name="radioAnswer"
+                    id=""
+                    checked
+                  />
+                </div>
 
+                <div class="modal-footer"></div>
+              </div>
+            </div>
+          </div>
+        </div>
         <!-- ======= Chart onload =========== -->
+        <script>
+          const fileInputImage = document.getElementById("imageCover");
+          const fileNameImage = document.getElementById("fileNameImage");
+
+          fileInputImage.addEventListener("change", (event) => {
+            const file = event.target.files[0];
+            fileNameImage.textContent = file.name;
+          });
+        </script>
+        <script>
+          const fileInputImage1 = document.getElementById("imageCover-1");
+          const fileNameImage1 = document.getElementById("fileNameImage-1");
+
+          fileInputImage1.addEventListener("change", (event) => {
+            const file = event.target.files[0];
+            fileNameImage1.textContent = file.name;
+          });
+        </script>
+        <script>
+          const fileInputImage2 = document.getElementById("imageCover-2");
+          const fileNameImage2 = document.getElementById("fileNameImage-2");
+
+          fileInputImage2.addEventListener("change", (event) => {
+            const file = event.target.files[0];
+            fileNameImage2.textContent = file.name;
+          });
+        </script>
         <script>
           $(function () {
             $("#btnAdd").bind("click", function () {

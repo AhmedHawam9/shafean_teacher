@@ -870,11 +870,11 @@ button.btn.btn-secondary.dropdown-toggle :hover {
 .btn:hover {
   border: unset;
 }
-.main-quran {
-  margin-top: 3rem;
-}
+
 .main-quran h4 {
   font-family: "bold";
+  margin-top: 17px;
+  font-size: 1rem;
 }
 .low-card {
   display: flex;
@@ -1033,9 +1033,7 @@ iframe {
 .lesson {
   margin-top: 5rem;
 }
-.low-lesson {
-  margin-top: 58px;
-}
+
 .crad-lesson {
   border: 1px solid rgba(0, 0, 0, 0.13);
   display: flex;
@@ -1101,7 +1099,7 @@ button.btn.inside:hover {
   border: 1px solid #06797e;
 }
 .botton-lesson {
-  margin-top: 3rem;
+  margin-top: 1rem;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -2155,9 +2153,15 @@ button.btn.Lesson-details:hover {
   align-items: center;
 }
 .Lesson-details-1 {
+  margin-top: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+}
+.Lesson-details-1 h4 {
+  font-family: bold;
+  font-size: 1rem;
 }
 .student-imge-text {
   border: 1px solid #0000000e;
@@ -2303,6 +2307,7 @@ div#pills-tabContent {
 }
 table.table {
   margin-top: 1.4rem;
+  min-width: 55rem;
 }
 thead {
   background-color: #d7d7e1;
@@ -2610,6 +2615,7 @@ button.btn.add-ask:hover {
   justify-content: start;
   align-items: center;
   gap: 10px;
+  flex-wrap:wrap ;
 }
 .group svg {
   margin-left: 10px;
@@ -2747,7 +2753,7 @@ img.img-group {
 }
 .main-testament {
   background-color: white;
-  padding: 3rem 0rem;
+  padding: 2rem 1rem;
   border-radius: 5px;
 }
 .main-testament img {
@@ -2868,6 +2874,7 @@ thead.please {
   display: flex;
   align-items: center;
   gap: 27px;
+  flex-wrap: wrap;
 }
 .one h4 {
   font-size: 0.8rem;
@@ -3299,7 +3306,105 @@ button.btn.edit-bi:hover {
   background-color: white;
   border: 1px solid #06797e;
 }
-
+.massage-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 104px;
+ 
+}
+.massage {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  
+}
+.massage h4 {
+  font-size: 0.7rem;
+}
+.massage img {
+  width: 60%;
+}
+.dropdown-item.massage:hover {
+  background-color: unset;
+}
+button.btn.btn-massage {
+  background-color: #06797e;
+  color: white;
+  font-size: 0.8rem;
+  padding: 0.5rem;
+  font-family: "regular";
+  transition: 0.7s;
+  border-radius: 10px;
+}
+button.btn.btn-massage:hover {
+  color: #06797e;
+  background-color: white;
+  border: 1px solid #06797e;
+}
+.low-lesson {
+  margin-top: 15px;
+}
+ .upload_file_label {
+  background-color: #f5f8fa;
+    border: 1px dashed #d1d3d6;
+    width: 100%;
+    text-align: center;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 0;
+    cursor: pointer;
+}
+.upload_file_label p {
+  font-family: "semibold";
+    color: #5f666f;
+    margin: 1.5rem 0 0.5rem !important;
+    font-size: 0.7rem;
+}
+.upload_file_label span {
+  font-family: "semibold";
+  color: #5f666f;
+}
+.upload_file_label svg {
+  color: #06797e;
+  font-size: 1.5rem;
+}
+label.mb-2.vidio {
+  font-size: 0.9rem;
+}
+label.grenal-ricipt {
+  font-size: 0.7rem;
+  font-family: 'regular';
+  margin-top: 16px;
+  color: #656565;
+}
+.imegs-main {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 14px;
+  
+}
+.hed-2 h4 {
+  margin-top: 23px;
+  font-family: "regular";
+  font-size: 01rem;
+  line-height: 28px;
+}
+.celender {
+  position: relative;
+}
+.celender svg {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: #06797e;
+}
+.new-hrder h4 {
+  font-size: 0.9rem;
+  font-family: "bold";
+}
 /* teacher */
 /* responsev */
 @media only screen and (max-width: 1500px) {
@@ -3335,6 +3440,16 @@ button.btn.edit-bi:hover {
   }
 }
 @media only screen and (max-width: 600px) {
+  .head-please {
+   width: unset;
+  }
+  .head-please h4 {
+    font-size: 0.7rem;
+  }
+  .main-preparation .form-check-input {
+    top: -5px;
+    left: 56px;
+}
   .img-stu {
     text-align: center;
   }
@@ -3478,7 +3593,7 @@ button.btn.edit-bi:hover {
   }
   .content-main {
     padding: 0;
-    height: 90%;
+    height: 100%;
   }
   .img-librar img {
     margin-top: 1rem;
@@ -3572,7 +3687,7 @@ button.btn.edit-bi:hover {
   }
   .crad-lesson {
     display: block;
-    margin-top: 42px;
+    margin-top: 10px;
   }
   .lasts {
     display: block;
@@ -3735,6 +3850,74 @@ button.btn.edit-bi:hover {
     height: 123px;
     right: calc(13px + 17.5px);
     top: 367px;
+}
+
+.active-1 h4 {
+  font-size: 0.7rem;
+}
+.active-1 a {
+  font-size: 0.7rem;
+}
+.main-home {
+  padding: unset;
+}
+.content-main-lib {
+  padding: 0.2rem ;
+}
+.main-group {
+  padding: unset;
+}
+
+.Lesson-details h4 {
+  font-size: 0.9rem;
+}
+button.btn.Lesson-details {
+  font-size: 0.7rem;
+}
+.test-details {
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+.main-testament {
+  margin-top: 10px;
+  padding: unset;
+}
+.main-testament img {
+  width:49%;
+}
+.student-imge-strat {
+  width: 100%;
+}
+.all-chart-1 h4 {
+  font-size: 0.8rem;
+}
+.end-text-lesson h4 {
+  width: unset;
+}
+
+.content-reports {
+  padding: unset;
+}
+.imegs-main {
+  flex-wrap: wrap;
+}
+.modal-body .form-check-input {
+  top: -5px;
+}
+.student-imge-details {
+  width: 100%;
+}
+.content-teacher {
+  padding: unset;
+}
+.student-imge-no {
+  padding: 1rem 4rem;
+}
+.main-end-lesson {
+  margin-top: 20px;
+}
+.student-imge-end {
+  width: 100%;
 }
 }
 
