@@ -45,12 +45,15 @@
               <input type="tel" class="form-control" placeholder="رقم الجوال" />
               <i class="fa-solid fa-phone"></i>
 
-              <input
-                type="password"
-                class="form-control"
-                placeholder="كلمة المرور"
-              />
-              <i class="fa-solid fa-lock"></i>
+              <div class="form-group">
+               
+                <input required id="password2" type="password" class="form-control"
+                    placeholder="ادخل كلمة المرور الحالية">
+                <span class="lock-icon" onclick="toggleNewPasswordVisibility()">
+                  <i id="lockIcon2" class="fa-solid fa-lock "></i>
+  
+                </span>
+            </div>
             </div>
             <div class="link-log">
               <a href="forget.html">نسيت كلمة المرور ؟ </a>
@@ -67,6 +70,22 @@
         </div>
       </div>
     </section>
+    <script>
+      function toggleNewPasswordVisibility() {
+           var passwordInput = document.getElementById("password2");
+           var lockIcon = document.getElementById("lockIcon2");
+
+           if (passwordInput.type === "password") {
+               passwordInput.type = "text";
+               lockIcon.classList.remove("fa-solid fa-lock-open");
+               lockIcon.classList.add("fa-solid fa-lock");
+           } else {
+               passwordInput.type = "password";
+               lockIcon.classList.remove("fa-solid fa-lock");
+               lockIcon.classList.add("fa-solid fa-lock-open");
+           }
+       }
+   </script>
 
     <script src="js/main.js"></script>
   </body>

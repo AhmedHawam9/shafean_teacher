@@ -125,7 +125,7 @@ svg.svg-inline--fa.fa-phone {
 }
 svg.svg-inline--fa.fa-lock {
   position: absolute;
-  top: 72px;
+  top: 11px;
   right: 15px;
   color: #575a598f;
 }
@@ -284,7 +284,8 @@ button.btn.save:hover {
 nav.navbar.lets {
   align-items: center;
   display: flex;
-  box-shadow: -1px 1px 3px #00000024;
+  box-shadow: -1px 1px 3px #00000011;
+  background-image: url(../mida/nav-up.png);
 }
 .beell {
   display: flex;
@@ -389,7 +390,7 @@ a.nav-link.active {
   padding: 2rem 0;
   position: fixed;
   right: 0;
-  z-index: 999;
+  /* z-index: 999; */
   box-shadow: 0px 1px 3px 0px #0000001f;
 }
 .sidebar.open,
@@ -600,7 +601,7 @@ button#dropdownMenuButton1 {
   color: black;
 }
 .dropdown-toggle::after {
-  margin-inline-start: 14px;
+  margin-inline-start: 5px;
 }
 
 /* content */
@@ -2549,6 +2550,8 @@ button.btn.add-ask:hover {
   color: black;
   font-family: bold;
 }
+
+
 .student-imge-text h5 {
   font-size: 0.8rem;
   font-family: "regular";
@@ -3333,6 +3336,24 @@ button#dropdownMenuButton1:active {
 button#dropdownMenuButton1:focus {
   border: unset !important;
 }
+.content-main-group {
+  height: 100vh;
+}
+svg#lockIcon2 {
+  top: 12px;
+}
+input#\34 {
+  position: unset;
+}
+input#\33 {
+  position: unset;
+}
+input#\32 {
+  position: unset;
+}
+input#\31 {
+  position: unset;
+}
 
 
 /* teacher */
@@ -3426,6 +3447,44 @@ button#dropdownMenuButton1:focus {
   li.nav-item.navlib a {
     font-size: 0.5rem;
   }
+  .sidebar li.nav-item img {
+    width: 35%;
+  }
+  .note-home {
+    width: 100%;
+  }
+  .main-site {
+    margin-top: 35px;
+  }
+  .main-home {
+    padding: 2rem 3rem;
+  }
+  .cards-reder img {
+    width: 95%;
+    margin-top: 20px;
+  }
+  .crad-lesson {
+    margin-top: 20px;
+  }
+  img.img-group {
+    width: 40%;
+  }
+  img.img-group {
+    width: 90%;
+  }
+  .line-af::after {
+    top: 302px;
+    right: 29px;
+}
+.img-lesson img {
+ width: 70%;
+}
+svg.svg-inline--fa.fa-lock {
+  position: absolute;
+  top: 11px;
+  right: 15px;
+  color: #575a598f;
+}
   
 }
 @media only screen and (max-width: 600px) {
@@ -3615,7 +3674,7 @@ button#dropdownMenuButton1:focus {
     margin-top: 13px;
   }
   a.img-reder img {
-    width: 100%;
+    width: 80%;
     margin-top: 13px;
   }
   .icon-video {
@@ -3632,7 +3691,7 @@ button#dropdownMenuButton1:focus {
     margin-top: 1rem;
   }
   .img-lesson img {
-    width: 40%;
+    width: 30%;
   }
   .crad-lesson {
     display: block;
@@ -3739,9 +3798,7 @@ button#dropdownMenuButton1:focus {
     width: 100%;
     border: unset;
   }
-  svg.svg-inline--fa.fa-lock {
-    top: 55px;
-  }
+  
   svg.svg-inline--fa.fa-lock-open.set {
     position: absolute;
     top: 97px;
@@ -3796,7 +3853,7 @@ button#dropdownMenuButton1:focus {
     font-size: 0.7rem;
   }
   .main-home {
-    padding: unset;
+    padding: 1rem 1rem;
   }
   .content-main-lib {
     padding: 0.2rem;
@@ -3807,6 +3864,7 @@ button#dropdownMenuButton1:focus {
 
   .Lesson-details h4 {
     font-size: 0.9rem;
+    margin-top: 10px;
   }
   button.btn.Lesson-details {
     font-size: 0.7rem;
@@ -3814,6 +3872,7 @@ button#dropdownMenuButton1:focus {
   .test-details {
     margin-top: 10px;
     flex-wrap: wrap;
+    gap: 6px;
   }
   .main-testament {
     margin-top: 10px;
@@ -3824,6 +3883,7 @@ button#dropdownMenuButton1:focus {
   }
   .student-imge-strat {
     width: 100%;
+    margin-right: 40px;
   }
   .all-chart-1 h4 {
     font-size: 0.8rem;
@@ -3849,6 +3909,7 @@ button#dropdownMenuButton1:focus {
   }
   .student-imge-no {
     padding: 1rem 4rem;
+    width: 100%;
   }
   .main-end-lesson {
     margin-top: 20px;
@@ -3885,6 +3946,7 @@ button#dropdownMenuButton1:focus {
   }
   .beell {
     margin-top: 30px;
+    transform: translateY(10px);
   }
   nav.navbar.lets {
     background-color: #06787e;
@@ -3895,6 +3957,9 @@ button#dropdownMenuButton1:focus {
   button#dropdownMenuButton1 {
     color: white;
   }
+  svg#lockIcon1 {
+    top: 12px;
+}
 }
 
 /* responsev */
