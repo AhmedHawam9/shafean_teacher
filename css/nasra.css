@@ -2488,7 +2488,7 @@ canvas#percentageJobs {
   padding: 1rem 1rem;
   margin-top: 3rem;
   border-radius: 16px;
-  margin-bottom: -91px;
+  
 }
 .main-preparation h4 {
   font-family: "bold";
@@ -2549,6 +2549,9 @@ button.btn.add-ask:hover {
 .group span {
   color: black;
   font-family: bold;
+}
+.head-group h4 {
+  font-family: "bold";
 }
 
 
@@ -3336,9 +3339,9 @@ button#dropdownMenuButton1:active {
 button#dropdownMenuButton1:focus {
   border: unset !important;
 }
-.content-main-group {
+/* .content-main-group {
   height: 100vh;
-}
+} */
 svg#lockIcon2 {
   top: 12px;
 }
