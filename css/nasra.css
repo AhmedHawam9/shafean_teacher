@@ -2599,6 +2599,9 @@ button.btn.now:hover {
   background-color: white;
   padding: 4rem 0rem;
   border-radius: 5px;
+  display: flex;
+  gap: 108px;
+  flex-wrap: wrap;
 }
 .main-site {
   display: flex;
@@ -3357,10 +3360,19 @@ input#\32 {
 input#\31 {
   position: unset;
 }
-
+.ff {
+  font-family: "regular";
+  font-size: 1rem;
+}
 
 /* teacher */
 /* responsev */
+@media only screen and (max-width: 3000px){
+  .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    max-width: 2216px !important;
+}
+}
+
 @media only screen and (max-width: 1500px) {
   .sidebar {
     margin-right: 0%;
@@ -3856,7 +3868,7 @@ svg.svg-inline--fa.fa-lock {
     font-size: 0.7rem;
   }
   .main-home {
-    padding: 1rem 1rem;
+    padding: 1rem 6rem;
   }
   .content-main-lib {
     padding: 0.2rem;
