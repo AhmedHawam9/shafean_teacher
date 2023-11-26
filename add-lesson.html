@@ -24,7 +24,7 @@
     <script src="js/dataTables.bootstrap5.min.js"></script>
     <!-- ? Custom JavaScript -->
 
-    <title>اضافة سؤال جديد</title>
+    <title>اضافة تحضير للدرس</title>
   </head>
   <body data-spy="scroll" data-target=".navbar">
     <div class="d-flex sidemobile p-0">
@@ -63,6 +63,12 @@
             </a>
           </li>
           <li class="nav-item">
+            <a href="add-lesson.html" class="nav-link align-middle">
+              <i class="fa-solid fa-person-chalkboard"></i>
+              <span>اضافة درس</span>
+            </a>
+          </li>
+          <li class="nav-item">
             <a href="#" class="nav-link align-middle">
               <i class="fa-solid fa-circle-exclamation"></i>
               <span>نبذة عنا</span>
@@ -72,12 +78,6 @@
             <a href="#" class="nav-link align-middle">
               <i class="fa-solid fa-newspaper"></i>
               <span>الاخبار</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="add-lesson.html" class="nav-link align-middle">
-              <i class="fa-solid fa-person-chalkboard"></i>
-              <span>اضافة درس</span>
             </a>
           </li>
           <li class="nav-item">
@@ -163,19 +163,30 @@
             </div>
           </div>
         </nav>
-        <div class="content-main-new">
+        <div class="content-main">
           <section class="container">
             <div class="main-preparation">
               <div class="header-preparation">
-                <h4>اضافة سؤال جديد</h4>
+                <h4>اضافة درس</h4>
               </div>
               <div class="row">
                 <div class="col-lg-6 col-md-12 col-12">
                   <div class="form-group">
-                    <label class="grenal" for="">نوع السؤال</label>
+                    <label class="grenal" for="">محتوي الدرس</label>
                     <select class="selectpicker">
                       <option value="" disabled selected hidden>
-                        معاني صور
+                        حدد محتوي الدرس
+                      </option>
+                      <option>0</option>
+                      <option>0</option>
+                      <option>0</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label class="grenal" for="">السورة</label>
+                    <select class="selectpicker">
+                      <option value="" disabled selected hidden>
+                        حدد السورة الخاصة بالدرس
                       </option>
                       <option>0</option>
                       <option>0</option>
@@ -185,88 +196,68 @@
                 </div>
               </div>
               <div class="row">
-                <div class="col-lg-6 col-md-12 col-12">
-                  <div class="imges">
-                    <div class="hed-2">
-                      <h4>
-                        ادخل عدد من الصور وقم بكتابة المعني من الصور فى الفورم
-                        بالاسفل لتطابقها مع تسجيل الطالب
-                      </h4>
-                    </div>
-                    <div class="imegs-main">
-                      <div class="form-group">
-                        <div id="AppendAnswer" class="AppendAnswer">
-                          <label for="imageCover" class="upload_file_label">
-                            <i class="fa-regular fa-image"></i>
-                            <p>اضف الصوره هنا من خلال سحب الصورة</p>
-                            <span id="fileNameImage">او اضغط هنا</span>
-                          </label>
-                          <input
-                            type="file"
-                            name=""
-                            id="imageCover"
-                            class="form-control"
-                            accept="image/*"
-                            hidden
-                          />
-                        </div>
-                      </div>
-                      <div class="form-group">
-                        <div id="AppendAnswer" class="AppendAnswer">
-                          <label for="imageCover-1" class="upload_file_label">
-                            <i class="fa-regular fa-image"></i>
-                            <p>اضف الصوره هنا من خلال سحب الصورة</p>
-                            <span id="fileNameImage-1">او اضغط هنا</span>
-                          </label>
-                          <input
-                            type="file"
-                            name=""
-                            id="imageCover-1"
-                            class="form-control"
-                            accept="image/*"
-                            hidden
-                          />
-                        </div>
-                      </div>
-                      <div class="form-group">
-                        <div id="AppendAnswer" class="AppendAnswer">
-                          <label for="imageCover-2" class="upload_file_label">
-                            <i class="fa-regular fa-image"></i>
-                            <p>اضف الصوره هنا من خلال سحب الصورة</p>
-                            <span id="fileNameImage-2">او اضغط هنا</span>
-                          </label>
-                          <input
-                            type="file"
-                            name=""
-                            id="imageCover-2"
-                            class="form-control"
-                            accept="image/*"
-                            hidden
-                          />
-                        </div>
-                      </div>
-                    </div>
+                <div class="col-lg-3 col-md-12 col-12">
+                  <div class="form-group">
+                    <label class="grenal" for="">من</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="البداية"
+                    />
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-12 col-12">
+                  <div class="form-group">
+                    <label class="grenal" for="">الي</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="النهاية"
+                    />
                   </div>
                 </div>
               </div>
               <div class="row">
                 <div class="col-lg-6 col-md-12 col-12">
                   <div class="form-group">
-                    <label class="grenal" for="">معنى الصور</label>
-                    <input
-                      type="text"
+                    <label for="exampleFormControlTextarea1" class="grenal"
+                      >اضافة ملاحظات</label
+                    >
+                    <textarea
                       class="form-control"
-                      placeholder="ادخل معنى الصور"
-                    />
+                      id="exampleFormControlTextarea1"
+                      rows="8"
+                      placeholder="اضف ملاحظاتك"
+                    ></textarea>
                   </div>
                 </div>
               </div>
-              <div class="row">
-                <div class="col-lg-8 col-md-12 col-12">
-                  <div class="button-added">
+              <input
+                type="checkbox"
+                name="mycheckbox"
+                id="mycheckbox"
+                value="0"
+              />
+              <label class="grenal" for="mycheckbox">اضافة اسئلة</label>
+              <div id="mycheckboxdiv" style="display: none">
+                <h3>السؤال الأول</h3>
+
+                <div class="row">
+                  <div class="col-lg-6 col-md-12 col-12">
+                    <div class="form-group">
+                      <label class="grenal" for="">نوع السؤال</label>
+                      <select class="selectpicker">
+                        <option value="" disabled selected hidden>
+                          اختياري
+                        </option>
+                        <option>0</option>
+                        <option>0</option>
+                        <option>0</option>
+                      </select>
+                    </div>
                     <button
                       type="button"
-                      class="btn added"
+                      class="btn add-ask"
                       data-bs-toggle="modal"
                       data-bs-target="#follow"
                     >
@@ -274,12 +265,10 @@
                     </button>
                   </div>
                 </div>
+              </div>
+              <div class="row">
                 <div class="col-lg-6 col-md-12 col-12">
-                  <div class="button-added">
-                    <button type="button" class="btn added-add">
-                      رفع السؤال الآن
-                    </button>
-                  </div>
+                  <button type="button" class="btn prepar">حفظ التحضير</button>
                 </div>
               </div>
             </div>
@@ -295,22 +284,6 @@
                   >Crazy Idea</a
                 >
               </p>
-            </div>
-          </div>
-        </div>
-        <div class="modal" id="out" tabindex="-1">
-          <div class="modal-dialog out">
-            <div class="modal-content">
-              <div class="modal-header"></div>
-              <div class="modal-body out">
-                <h4>هل تريد تسجيل الخروج؟</h4>
-
-                <button type="submit" class="btn PrimaryButton">تأكيد</button>
-
-                <button type="submit" class="btn PrimaryButton">الغاء</button>
-              </div>
-
-              <div class="modal-footer"></div>
             </div>
           </div>
         </div>
@@ -373,7 +346,7 @@
                     type="text"
                     class="form-control"
                     placeholder="جاءت ( تِلْكَ حُدُودُ اللَّهِ .. ) في أول موضع
-                "
+                  "
                   />
                 </div>
                 <div class="form-group">
@@ -560,58 +533,24 @@
             </div>
           </div>
         </div>
+        <div class="modal" id="out" tabindex="-1">
+          <div class="modal-dialog out">
+            <div class="modal-content">
+              <div class="modal-header"></div>
+              <div class="modal-body out">
+                <h4>هل تريد تسجيل الخروج؟</h4>
+
+                <button type="submit" class="btn PrimaryButton">تأكيد</button>
+
+                <button type="submit" class="btn PrimaryButton">الغاء</button>
+              </div>
+
+              <div class="modal-footer"></div>
+            </div>
+          </div>
+        </div>
+
         <!-- ======= Chart onload =========== -->
-       
-       
-        <script>
-          const fileInputImage1 = document.getElementById("imageCover-1");
-          const fileNameImage1 = document.getElementById("fileNameImage-1");
-
-          fileInputImage1.addEventListener("change", (event) => {
-            const file = event.target.files[0];
-            fileNameImage1.textContent = file.name;
-          });
-        </script>
-        <script>
-          const fileInputImage2 = document.getElementById("imageCover-2");
-          const fileNameImage2 = document.getElementById("fileNameImage-2");
-
-          fileInputImage2.addEventListener("change", (event) => {
-            const file = event.target.files[0];
-            fileNameImage2.textContent = file.name;
-          });
-        </script>
-        <script>
-          $(function () {
-            $("#btnAdd").bind("click", function () {
-              var div = $("<div />");
-              div.html(GetDynamicTextBox(""));
-              $("#TextBoxContainer").append(div);
-            });
-            $("#btnGet").bind("click", function () {
-              var values = "";
-              $("input[name=DynamicTextBox]").each(function () {
-                values += $(this).val() + "\n";
-              });
-              alert(values);
-            });
-            $("body").on("click", ".remove", function () {
-              $(this).closest("div").remove();
-            });
-          });
-          function GetDynamicTextBox(value) {
-            return (
-              '<input type="text" value = "' +
-              value +
-              '" />&nbsp;' +
-              '<input name = "DynamicTextBox" type="text" value = "' +
-              value +
-              '" />&nbsp;' +
-              '<input id="btnAdd" type="button" value="Add" />' +
-              '<input type="button" value="Remove" class="remove" />'
-            );
-          }
-        </script>
         <script type="text/javascript">
           $("#mycheckbox").change(function () {
             $("#mycheckboxdiv").toggle();
