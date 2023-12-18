@@ -30,6 +30,13 @@ body {
 }
 
 /* Work-container-login */
+img.img-footer {
+  width: 130px;
+  height: 77px;
+}
+.text-footer p {
+  margin-top: 0 !important;
+}
 section.ath {
   height: 100vh;
   display: flex;
@@ -1924,6 +1931,7 @@ button.btn.PrimaryButton:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0.3rem 1rem;
 }
 .end-page .made a {
   color: black;
