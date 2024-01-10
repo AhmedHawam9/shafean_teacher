@@ -1928,9 +1928,6 @@ button.btn.PrimaryButton:hover {
 }
 .made {
   font-family: "regular";
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   padding: 0.3rem 1rem;
 }
 .end-page .made a {
@@ -2683,9 +2680,10 @@ button.btn.now:hover {
   margin-top: 19px;
   padding: 2rem;
   text-align: center;
+  margin-bottom: 57px;
 }
 img.img-group {
-  width: 80%;
+  width: 65%;
 }
 .main-testament {
   background-color: white;
@@ -3372,6 +3370,35 @@ input#\31 {
   font-family: "regular";
   font-size: 1rem;
 }
+.end-page {
+  background-color: #eceae7;
+  padding: 0.5rem;
+  position: fixed;
+  bottom: 0px;
+  width: calc(100% - 15%);
+}
+.text-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0.5rem;
+}
+.text-footer p {
+  font-family: "bold";
+  margin-bottom: 0;
+}
+.text-footer a {
+  color: #000;
+  text-decoration: none;
+}
+.alltet {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.alltet img {
+  width: 6%;
+}
 
 /* teacher */
 /* responsev */
@@ -3982,6 +4009,20 @@ svg.svg-inline--fa.fa-lock {
   }
   svg#lockIcon1 {
     top: 12px;
+}
+.end-page {
+  width: 100%;
+  position: relative;
+}
+.text-footer {
+  flex-wrap: wrap;
+}
+.alltet {
+  flex-wrap: wrap;
+  gap: unset;
+}
+.alltet img {
+  width: 19%;
 }
 }
 
