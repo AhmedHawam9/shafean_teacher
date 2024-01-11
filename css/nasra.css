@@ -3371,10 +3371,9 @@ input#\31 {
   font-size: 1rem;
 }
 .end-page {
-  background-color: #eceae7;
-  padding: 0.5rem;
+  padding: 1rem;
   position: fixed;
-  bottom: 0px;
+  bottom: 0 !important;
   width: calc(100% - 15%);
 }
 .text-footer {
@@ -3395,9 +3394,22 @@ input#\31 {
   display: flex;
   align-items: center;
   gap: 20px;
+  width: 65%;
 }
 .alltet img {
   width: 6%;
+}
+.slogn {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 15px;
+  flex: 1;
+}
+ 
+.end-page .made a {
+  color: black;
+  text-decoration: none;
 }
 
 /* teacher */
@@ -3534,6 +3546,16 @@ svg.svg-inline--fa.fa-lock {
   top: 11px;
   right: 15px;
   color: #575a598f;
+}
+.alltet {
+  flex-wrap: wrap;
+  font-size: 0.7rem;
+}
+.end-page{
+  width: 100%;
+}
+.alltet img {
+  width: 10%;
 }
   
 }
@@ -4018,11 +4040,20 @@ svg.svg-inline--fa.fa-lock {
   flex-wrap: wrap;
 }
 .alltet {
-  flex-wrap: wrap;
+  display: block;
   gap: unset;
+}
+.alltet p {
+  font-size: 0.7rem;
 }
 .alltet img {
   width: 19%;
+}
+.text-footer p {
+  font-size: 0.7rem;
+}
+.slogn {
+  gap: unset;
 }
 }
 
