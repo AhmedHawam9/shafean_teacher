@@ -3502,8 +3502,9 @@ svg.svg-inline--fa.fa-magnifying-glass {
 .form-group.seach {
   width: 50%;
 }
-.form-group.cele {
-  width: 32%;
+.form-control.cele {
+  width: 100%;
+  background-color: white;
 }
 /* teacher */
 /* responsev */
